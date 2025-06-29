@@ -1,0 +1,38 @@
+[
+  {
+    "_id": "665f39a4c4a1d9f01b5a0001",
+    "title": "Event Management",
+    "description": "Designed a fully functional e-commerce platform using React and Node.js, complete with user authentication.",
+    "tags": ["React", "Node.js", "Express", "Firebase"],
+    "image": "https://i.ibb.co/nMpY3Bt/1.png",
+    "github": "https://github.com/your-repo",
+    "live": "https://your-site.com"
+  },
+  {
+    "_id": "665f39a4c4a1d9f01b5a0002",
+    "title": "Plant-Care-Tracker-Client",
+    "description": "Designed and built a sleek personal portfolio showcasing a photographer’s skills, projects, and achievements.",
+    "tags": ["React", "Node.js", "Express", "Firebase"],
+    "image": "https://i.ibb.co/TMfMZtkw/2.png",
+    "github": "https://github.com/your-repo",
+    "live": "https://your-site.com"
+  },
+  {
+    "_id": "665f39a4c4a1d9f01b5a0003",
+    "title": "JobTrack",
+    "description": "I created a dynamic Jewelry Website using React for the frontend and Node.js for the backend.",
+    "tags": ["React", "Node.js", "Express", "Firebase"],
+    "image": "https://i.ibb.co/8nL96SqX/3.png",
+    "github": "https://github.com/your-repo",
+    "live": "https://your-site.com"
+  },
+  {
+    "_id": "665f39a4c4a1d9f01b5a0004",
+    "title": "PathoWay",
+    "description": "Currently building PathoWay – a parcel delivery web application with real-time service center data, responsive forms, and location-based tracking.",
+    "tags": ["React", "Node.js", "Express", "Firebase"],
+    "image": "https://i.ibb.co/yBNqpXDw/4.png",
+    "github": "https://github.com/your-repo",
+    "live": "https://your-site.com"
+  }
+]

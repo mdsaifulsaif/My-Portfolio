@@ -4,7 +4,7 @@ import { MdWorkOutline } from "react-icons/md";
 
 const Qualification = () => {
   return (
-    <section className="bg-gray-800 text-white px-4 md:px-20 py-16">
+    <section className="bg-gray-800 rounded-xl text-white px-4 md:px-20 py-16">
       <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
         My{" "}
         <span className="bg-gradient-to-r from-purple-600 via-indigo-500 to-blue-500 bg-clip-text text-transparent">
@@ -37,9 +37,9 @@ const Qualification = () => {
               Management
             </p>
 
-            <p>
+            {/* <p>
               <span className="font-medium text-white">Passing Year:</span> 2022
-            </p>
+            </p> */}
           </div>
         </div>
 

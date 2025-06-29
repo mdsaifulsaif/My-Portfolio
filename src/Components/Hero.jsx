@@ -7,7 +7,7 @@ import MarqueeBar from "./MarqueeBar";
 const Hero = () => {
   return (
     <>
-      <div className="text-white     pt-20 pb-10 px-4 md:px-10 flex flex-col-reverse md:flex-row items-center justify-between relative overflow-hidden">
+      <div className="text-white  pt-20 pb-10 px-4 md:px-0  flex flex-col-reverse md:flex-row items-center justify-between relative overflow-hidden">
         {/* Left Content */}
         <div className="md:w-1/2 text-center md:text-left space-y-6 z-10">
           <h1 className="text-3xl md:text-5xl font-bold leading-tight">

@@ -7,7 +7,7 @@ import Qualification from "./Qualification";
 
 function Home() {
   return (
-    <div className="w-11/12 mx-auto border-2 border-red-300">
+    <div className="w-11/12 mx-auto md:px-10 ">
       <Hero></Hero>
       <AboutMe></AboutMe>
       <SkillsSection></SkillsSection>

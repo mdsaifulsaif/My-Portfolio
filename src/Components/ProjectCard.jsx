@@ -4,6 +4,7 @@ import { AiOutlineShoppingCart, AiOutlineUser } from "react-icons/ai";
 import { GiDiamondHard, GiKnifeFork } from "react-icons/gi";
 import { LuArrowUpRight } from "react-icons/lu";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
+import { Link } from "react-router";
 
 const iconMap = {
   AiOutlineShoppingCart: <AiOutlineShoppingCart size={24} />,
@@ -13,7 +14,6 @@ const iconMap = {
 };
 
 const ProjectCard = ({ project }) => {
-  console.log(project);
   return (
     <div className="rounded-xl bg-gray-800 p-4 shadow-md transition hover:shadow-indigo-500/30">
       {/* Project Image */}
@@ -43,14 +43,13 @@ const ProjectCard = ({ project }) => {
         {/* Action Buttons */}
         <div className="mt-4 flex flex-wrap gap-3">
           {/* Detail Button */}
-          <a
-            href={project.github}
-            target="_blank"
+          <Link
+            to={`/project/${project._id}`}
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 text-sm  bg-gradient-to-r from-purple-600 via-indigo-500 to-blue-500   px-4 py-2 rounded-md transition"
           >
             <LuArrowUpRight /> View Project
-          </a>
+          </Link>
 
           {/* GitHub Button */}
           <a
