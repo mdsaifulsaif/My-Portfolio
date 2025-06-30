@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { ImOpt } from "react-icons/im";
-import { NavLink } from "react-router"; // Fixed import
+import { Link, NavLink } from "react-router"; // Fixed import
 // import logo from "../assets/Images/Logo.png";
 import logo from "../assets/Images/sitelogo1.png";
 
@@ -34,7 +34,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`w-full fixed top-0 left-0 z-50 transition-all duration-300 ${
+      className={`w-full  fixed top-0 left-0 z-50 transition-all duration-300 ${
         isScrolled
           ? "bg-gradient-to-r from-purple-900 via-indigo-900 to-blue-900 shadow-lg"
           : "bg-transparent"
@@ -43,12 +43,18 @@ const Navbar = () => {
       <div className="w-11/12 md:px-10 mx-auto  py-2 ">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <div className="text-2xl flex items-center justify-center font-bold bg-gradient-to-r from-purple-600 via-indigo-500 to-blue-500 bg-clip-text text-transparent">
-            <img className="w-[70px] -ml-5  rounded-full " src={logo} alt="" />{" "}
-            <span className="text-2xl font-bold bg-gradient-to-r from-purple-600 via-indigo-500 to-blue-500 bg-clip-text text-transparent">
-              Saiful.dev
-            </span>
-          </div>
+          <Link to="/">
+            <div className="text-2xl cursor-pointer flex items-center justify-center font-bold bg-gradient-to-r from-purple-600 via-indigo-500 to-blue-500 bg-clip-text text-transparent">
+              <img
+                className="w-[70px] -ml-5  rounded-full "
+                src={logo}
+                alt=""
+              />{" "}
+              <span className="text-2xl font-bold bg-gradient-to-r from-purple-600 via-indigo-500 to-blue-500 bg-clip-text text-transparent">
+                Saiful.dev
+              </span>
+            </div>
+          </Link>
 
           {/* Desktop Nav */}
           <ul className="hidden md:flex space-x-8">

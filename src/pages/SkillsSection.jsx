@@ -20,7 +20,7 @@ const skills = [
 
 const SkillsSection = () => {
   return (
-    <div className="pb-10 pt-15 px-4 max-w-5xl mx-auto text-center">
+    <div className=" mt-16 px-4 max-w-5xl mx-auto text-center">
       <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
         My{" "}
         <span className="bg-gradient-to-r from-purple-600 via-indigo-500 to-blue-500 bg-clip-text text-transparent">

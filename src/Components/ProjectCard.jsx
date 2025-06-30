@@ -20,7 +20,7 @@ const ProjectCard = ({ project }) => {
       <img
         src={project?.image}
         alt={project.title}
-        className="w-full h-80 object-cover rounded-lg"
+        className="w-full h-80 object-cover rounded-xl"
       />
 
       {/* Project Info */}
@@ -49,7 +49,7 @@ const ProjectCard = ({ project }) => {
           <Link
             to={`/project/${project._id}`}
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 text-sm  bg-gradient-to-r from-purple-600 via-indigo-500 to-blue-500   px-4 py-2 rounded-md transition"
+            className="inline-flex items-center gap-2 text-sm  bg-gradient-to-r from-purple-900 via-indigo-900 to-blue-900    px-4 py-2 rounded-md transition"
           >
             <LuArrowUpRight /> View Project
           </Link>

@@ -2,7 +2,7 @@ import profileImage from "../assets/Images/Md.Saiful Saif1.png";
 const AboutMe = () => {
   return (
     <section className=" text-white  px-4 md:pl-15 md:pr-10">
-      <div className=" py-20 mx-auto flex flex-col md:flex-row items-center gap-10">
+      <div className=" mt-16 mx-auto flex flex-col md:flex-row items-center gap-10">
         {/* Image with border effect */}
         <div className="relative w-64 h-80">
           <div className="absolute top-6 -left-6 p-[5px] w-full h-full  bg-gradient-to-r from-purple-900 via-indigo-900 to-blue-900 z-0">
@@ -35,9 +35,12 @@ const AboutMe = () => {
             improve my skills.
           </p>
           <div className="flex gap-4">
-            <button className="bg-gradient-to-r from-purple-900 via-indigo-900 to-blue-900 z-0 text-white font-semibold px-6 py-2 rounded hover:bg-yellow-300 transition">
+            <a
+              href="#contact"
+              className="bg-gradient-to-r cursor-pointer from-purple-900 via-indigo-900 to-blue-900 z-0 text-white font-semibold px-6 py-2 rounded  transition"
+            >
               Hire Me
-            </button>
+            </a>
             <a
               href="https://drive.google.com/file/d/1BNUD6_cdueFHyXuWEKfXYB_WO4j8Blw9/view?usp=sharing"
               target="blank"

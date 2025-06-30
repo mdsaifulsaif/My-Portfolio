@@ -16,7 +16,7 @@ const Hero = () => {
     <>
       <div className="text-white  pt-20 pb-10 px-4 md:px-0  flex flex-col-reverse md:flex-row items-center justify-between relative overflow-hidden">
         {/* Left Content */}
-        <div className="md:w-1/2 text-center md:text-left space-y-6 z-10">
+        <div className="md:w-1/2 text-center  md:text-left space-y-6 z-10">
           <h1 className="text-3xl md:text-5xl font-bold leading-tight">
             Hello Mate <FaHandPaper className="inline text-yellow-400 ml-2" />
             <br />

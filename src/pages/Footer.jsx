@@ -1,6 +1,14 @@
 import React, { useState } from "react";
-import { FaGithub, FaLinkedin, FaFacebook, FaDribbble } from "react-icons/fa";
+import {
+  FaGithub,
+  FaLinkedin,
+  FaDribbble,
+  FaEnvelope,
+  FaWhatsapp,
+} from "react-icons/fa";
 import logo from "../assets/Images/sitelogo1.png";
+import { Link } from "react-router";
+
 const Footer = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -20,25 +28,53 @@ const Footer = () => {
   };
 
   return (
-    <footer id="contact" className="bg-gray-900 ">
-      <div className="w-11/12 text-white px-4 md:px-10 py-12 mx-auto">
+    <footer id="contact" className="bg-gray-900">
+      <div className="w-11/12 text-white px-4 md:px-10 py-12 mt-16 mx-auto">
         <div className="flex flex-col md:flex-row justify-between gap-10">
-          {/* Left: Logo + About + Socials */}
+          {/* Left Side */}
           <div className="md:w-1/2 space-y-6">
             {/* Logo */}
-            <div className="text-2xl flex items-center -pl-20  font-bold bg-gradient-to-r from-purple-600 via-indigo-500 to-blue-500 bg-clip-text text-transparent">
-              <img className="w-[70px] -ml-5 rounded-full " src={logo} alt="" />{" "}
-              <span className="text-2xl font-bold bg-gradient-to-r from-purple-600 via-indigo-500 to-blue-500 bg-clip-text text-transparent">
-                Saiful.dev
-              </span>
-            </div>
+            <Link to="/">
+              <div className="text-2xl cursor-pointer flex items-center font-bold bg-gradient-to-r from-purple-600 via-indigo-500 to-blue-500 bg-clip-text text-transparent">
+                <img
+                  className="w-[70px] -ml-5 rounded-full"
+                  src={logo}
+                  alt=""
+                />
+                <span className="ml-2">Saiful.dev</span>
+              </div>
+            </Link>
 
-            {/* Description */}
+            {/* About */}
             <p className="text-gray-400 max-w-md">
               I'm a MERN Stack Developer specializing in creating beautiful,
               fast, and scalable web applications. Let's connect and build
               something amazing!
             </p>
+
+            {/* Email & WhatsApp */}
+            <div className="mt-4 space-y-2 text-sm text-gray-400">
+              <div className="flex items-center space-x-2">
+                <FaEnvelope className="text-white" />
+                <a
+                  href="mailto:mdsaifulsaif.dev@gmail.com"
+                  className="hover:text-white"
+                >
+                  mdsaifulsaif.dev@gmail.com
+                </a>
+              </div>
+              <div className="flex items-center space-x-2">
+                <FaWhatsapp className="text-green-500" />
+                <a
+                  href="https://wa.me/8801727841588"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-white"
+                >
+                  WhatsApp Chat
+                </a>
+              </div>
+            </div>
 
             {/* Social Icons */}
             <div className="flex space-x-4 text-xl">
@@ -61,16 +97,12 @@ const Footer = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                {/* <FaFacebook className="hover:text-[#129990] transition" /> */}
-                <FaDribbble
-                  className="hover:text-blue-500 transition"
-                  size={20}
-                />
+                <FaDribbble className="hover:text-blue-500 transition" />
               </a>
             </div>
           </div>
 
-          {/* Right: Contact Form */}
+          {/* Right Side: Contact Form */}
           <div className="md:w-1/2">
             <h3 className="text-xl font-semibold mb-4">Quick Contact</h3>
             <form onSubmit={handleSubmit} className="space-y-4">
@@ -103,7 +135,7 @@ const Footer = () => {
               ></textarea>
               <button
                 type="submit"
-                className="w-full py-2 bg-gradient-to-r from-purple-600 via-indigo-500 to-blue-500 rounded-md hover:opacity-90 transition"
+                className="w-full py-2 bg-gradient-to-r from-purple-900 via-indigo-900 to-blue-900 rounded-md hover:opacity-90 transition"
               >
                 Send
               </button>
