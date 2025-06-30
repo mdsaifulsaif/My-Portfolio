@@ -38,9 +38,13 @@ const AboutMe = () => {
             <button className="bg-gradient-to-r from-purple-900 via-indigo-900 to-blue-900 z-0 text-white font-semibold px-6 py-2 rounded hover:bg-yellow-300 transition">
               Hire Me
             </button>
-            <button className="border border-white px-6 py-2 rounded hover:bg-gradient-to-r from-purple-900 via-indigo-900 to-blue-900 z-0 hover:text-black transition hover:text-white">
+            <a
+              href="https://drive.google.com/file/d/1BNUD6_cdueFHyXuWEKfXYB_WO4j8Blw9/view?usp=sharing"
+              target="blank"
+              className="border border-white px-6 py-2 rounded hover:bg-gradient-to-r from-purple-900 via-indigo-900 to-blue-900 z-0  transition hover:text-white"
+            >
               Download CV
-            </button>
+            </a>
           </div>
         </div>
       </div>

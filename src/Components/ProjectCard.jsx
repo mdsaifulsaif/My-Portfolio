@@ -26,7 +26,10 @@ const ProjectCard = ({ project }) => {
       {/* Project Info */}
       <div className="mt-4">
         <h3 className="text-xl font-bold">{project.title}</h3>
-        <p className="text-gray-400 mt-2 text-sm">{project.description}</p>
+        <p className="text-gray-400 mt-2 text-sm">
+          {" "}
+          {project.description.split(" ").slice(0, 10).join(" ")}...
+        </p>
 
         {/* Tags */}
         <div className="mt-3 flex flex-wrap gap-2">

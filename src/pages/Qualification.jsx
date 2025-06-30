@@ -14,7 +14,7 @@ const Qualification = () => {
 
       <div className="grid md:grid-cols-2 gap-10">
         {/* Academic Qualification */}
-        <div className="bg-gray-900 p-6 rounded-xl shadow-lg hover:shadow-indigo-500/30 transition">
+        <div className="bg-gray-700 p-6 rounded-xl shadow-lg hover:shadow-indigo-500/30 transition">
           <div className="flex items-center gap-4 mb-4">
             <FaUniversity className="text-3xl text-purple-500" />
             <h3 className="text-xl font-semibold">Academic</h3>
@@ -44,7 +44,7 @@ const Qualification = () => {
         </div>
 
         {/* Work Experience */}
-        <div className="bg-gray-900 p-6 rounded-xl shadow-lg hover:shadow-blue-500/30 transition">
+        <div className="bg-gray-700 p-6 rounded-xl shadow-lg hover:shadow-blue-500/30 transition">
           <div className="flex items-center gap-4 mb-4">
             <MdWorkOutline className="text-3xl text-indigo-400" />
             <h3 className="text-xl font-semibold">Professional Experience</h3>

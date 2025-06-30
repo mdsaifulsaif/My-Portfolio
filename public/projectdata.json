@@ -2,37 +2,137 @@
   {
     "_id": "665f39a4c4a1d9f01b5a0001",
     "title": "Event Management",
-    "description": "Designed a fully functional e-commerce platform using React and Node.js, complete with user authentication.",
+    "description": "EventMatea is a modern event management platform where users can discover, join, and manage events. It features dark mode, authentication, animated UI, and real-time filtering to create a dynamic and engaging experience.",
+    "features": [
+      "🎨 Modern UI – Built with Tailwind CSS for a sleek and responsive interface.",
+      "🌙 Dark Mode Toggle – Seamless switching between light and dark themes.",
+      "🔐 Firebase Authentication – Secure login system with protected routes.",
+      "🔍 Event Search & Filter – Easily search events by name and filter by category.",
+      "📆 Upcoming & Joined Events – Users can view and manage their event participation.",
+      "🖼️ Photo Gallery – Explore event images in a responsive visual gallery.",
+      "📅 Event Details View – See event time, location, type, and full description.",
+      "🌀 GSAP & Lottie Animations – Smooth transitions and animated icons for a lively UI.",
+      "🚀 Client-side Routing – Fast navigation using React Router.",
+      "💬 Alerts & Tooltips – Enhanced feedback using SweetAlert2 and tooltips."
+    ],
+    "techStack": {
+      "frontend": [
+        "React 19",
+        "Tailwind CSS",
+        "React Router",
+        "React Hook Form",
+        "React Icons",
+        "GSAP",
+        "Lottie-react",
+        "SweetAlert2",
+        "React Tooltip",
+        "React Fast Marquee",
+        "React Helmet Async",
+        "Date-fns",
+        "React Datepicker"
+      ],
+      "backend": []
+    },
     "tags": ["React", "Node.js", "Express", "Firebase"],
-    "image": "https://i.ibb.co/nMpY3Bt/1.png",
-    "github": "https://github.com/your-repo",
-    "live": "https://your-site.com"
+    "image": "https://i.ibb.co/nMpY3BtG/1.png",
+    "github client": "https://github.com/mdsaifulsaif/PathoWay",
+    "live": "https://impacthub-ph.netlify.app/"
   },
   {
     "_id": "665f39a4c4a1d9f01b5a0002",
-    "title": "Plant-Care-Tracker-Client",
-    "description": "Designed and built a sleek personal portfolio showcasing a photographer’s skills, projects, and achievements.",
+    "title": "Plant-Care-Tracker",
+    "description": "This project uses react-helmet-async to dynamically manage page titles and metadata based on the active route. It enhances SEO, improves accessibility, and gives each page a unique context. Custom titles are set per route to help search engines and users better understand the page content. The TopPlantCareMistakes component highlights the top 5 most common indoor plant care mistakes. It is visually styled using Tailwind CSS and includes warning icons from react-icons to alert users. The layout features a light green background, rounded corners, and shadow effects for a clean, modern appearance. The SeasonalPlantCareTips component provides specific plant care tips for Spring, Summer, Autumn, and Winter. It uses react-icons to represent each season visually and Tailwind CSS for a responsive, centered layout. This helps users adjust their plant care routine throughout the year in an intuitive and engaging way.",
+    "features": [
+      "📝 Dynamic Page Titles – Manage page titles and metadata per route using react-helmet-async for better SEO and accessibility.",
+      "⚠️ Plant Care Warnings – Highlights top 5 common houseplant care mistakes with icons and styled layout.",
+      "🌿 Seasonal Plant Tips – Offers tailored plant care advice for Spring, Summer, Autumn, and Winter with seasonal icons.",
+      "🎨 Tailwind Styling – Uses Tailwind CSS for clean, responsive, and modern UI design across components.",
+      "🔔 Visual Alerts – Uses react-icons like FaExclamationTriangle for intuitive visual cues in plant care components.",
+      "💻 Fully Responsive – All components are designed to work seamlessly across desktop, tablet, and mobile devices."
+    ],
+    "techStack": {
+      "frontend": [
+        "React (Vite)",
+        "React Router DOM",
+        "Tailwind CSS",
+        "DaisyUI",
+        "React Icons",
+        "Lottie-React",
+        "Framer Motion",
+        "React Helmet Async",
+        "SweetAlert2",
+        "React Hook Form"
+      ],
+      "backend": ["Node.js", "Express.js", "MongoDB", "Firebase Admin SDK"]
+    },
     "tags": ["React", "Node.js", "Express", "Firebase"],
     "image": "https://i.ibb.co/TMfMZtkw/2.png",
-    "github": "https://github.com/your-repo",
-    "live": "https://your-site.com"
+    "github client": "https://github.com/mdsaifulsaif/Plant-Care-Tracker-Client-10",
+    "github server": "https://github.com/mdsaifulsaif/Plant-Care-Tracker-Client-10",
+    "live": "https://ninja-ph.netlify.app/"
   },
   {
     "_id": "665f39a4c4a1d9f01b5a0003",
     "title": "JobTrack",
-    "description": "I created a dynamic Jewelry Website using React for the frontend and Node.js for the backend.",
+    "description": "Job Track is an innovative and user-friendly web application designed to help job seekers explore a wide variety of job opportunities across multiple companies. This single-page application centralizes listings from multiple organizations, allowing users to view job descriptions, criteria, and apply directly through company websites. It offers a clean, winter-themed design focused on regional support and usability.",
+    "features": [
+      "🏢 Company Listings – View companies and their job postings from dynamic JSON data.",
+      "📄 Job Modal – See detailed job descriptions with direct 'Apply' links.",
+      "🧩 Responsive Layout – Mobile, tablet, and desktop-friendly design.",
+      "🚀 Dynamic Routing – Navigation powered by React Router.",
+      "📝 Page Metadata – Dynamic titles using react-helmet-async.",
+      "🛠️ Additional Routes – Includes Forgot Password and Profile Update pages.",
+      "🎨 Winter Themed Design – Aesthetic UI with regional inspiration.",
+      "❌ 404 Not Found – Custom page for undefined routes."
+    ],
+    "techStack": {
+      "frontend": [
+        "React (Vite)",
+        "React Router DOM",
+        "Tailwind CSS",
+        "DaisyUI",
+        "React Icons",
+        "Lottie-React",
+        "Framer Motion",
+        "React Helmet Async",
+        "SweetAlert2",
+        "React Hook Form"
+      ],
+      "backend": ["Node.js", "Express.js", "MongoDB"]
+    },
     "tags": ["React", "Node.js", "Express", "Firebase"],
     "image": "https://i.ibb.co/8nL96SqX/3.png",
-    "github": "https://github.com/your-repo",
-    "live": "https://your-site.com"
+    "github": "https://github.com/mdsaifulsaif/JobTrack-Client-9",
+    "live": "https://job-house-ph.netlify.app/"
   },
   {
     "_id": "665f39a4c4a1d9f01b5a0004",
     "title": "PathoWay",
-    "description": "Currently building PathoWay – a parcel delivery web application with real-time service center data, responsive forms, and location-based tracking.",
+    "description": "Pathoway is a modern parcel delivery platform where users can effortlessly send parcels by filling out sender and receiver forms. It features real-time tracking, rider management, and secure online payments.",
+    "features": [
+      "📦 Send Parcel Easily – Fill in sender and receiver details through a dynamic, user-friendly form.",
+      "🧾 Smart Rider Registration – Users can apply to become delivery riders with role-based data submission.",
+      "💳 Stripe Payment Integration – Secure checkout using Stripe for various delivery types.",
+      "🌍 Coverage Visualization – Interactive Leaflet.js map showing delivery zones across Bangladesh.",
+      "📬 Service Types – Supports document, parcel, and door-to-door deliveries.",
+      "🔐 Firebase Authentication – Email/password-based secure login system.",
+      "⚙️ Admin Controls (future scope) – Dashboard structure to manage riders, orders, and service centers."
+    ],
+    "techStack": {
+      "frontend": [
+        "React 19",
+        "Tailwind CSS",
+        "React Hook Form",
+        "React Icons",
+        "React Query",
+        "Leaflet.js"
+      ],
+      "backend": ["Node.js", "Express.js", "MongoDB", "Firebase Admin SDK"]
+    },
+
     "tags": ["React", "Node.js", "Express", "Firebase"],
     "image": "https://i.ibb.co/yBNqpXDw/4.png",
-    "github": "https://github.com/your-repo",
-    "live": "https://your-site.com"
+    "github client": "https://github.com/mdsaifulsaif/PathoWay",
+    "live": "https://pathoway-ph.netlify.app/"
   }
 ]

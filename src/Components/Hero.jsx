@@ -1,7 +1,14 @@
 import React from "react";
-import { FaHandPaper, FaDownload } from "react-icons/fa";
+import {
+  FaHandPaper,
+  FaDownload,
+  FaLinkedin,
+  FaGithub,
+  FaDribbble,
+} from "react-icons/fa";
 import { MdCall } from "react-icons/md";
 import profileImage from "../assets/Images/Md.Saiful Saif1.png"; // Update as needed
+
 import MarqueeBar from "./MarqueeBar";
 
 const Hero = () => {
@@ -24,6 +31,33 @@ const Hero = () => {
             turn ideas into high quality products.
           </p>
 
+          {/* Socials */}
+          <div className="flex justify-center md:justify-start gap-4 mb-4">
+            <a
+              href="https://www.linkedin.com/in/saiful-saif-3036362b3/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white hover:text-blue-500 transition"
+            >
+              <FaLinkedin size={24} />
+            </a>
+            <a
+              href="https://github.com/mdsaifulsaif"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white hover:text-blue-500  transition"
+            >
+              <FaGithub size={24} />
+            </a>
+            <a
+              href="https://dribbble.com/mdsaifulsaif"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white hover:text-blue-500 transition"
+            >
+              <FaDribbble size={24} />
+            </a>
+          </div>
           {/* Buttons */}
           <div className="flex flex-col sm:flex-row gap-4">
             <a
@@ -33,7 +67,8 @@ const Hero = () => {
               <MdCall /> Book a Call
             </a>
             <a
-              href="/Saiful_Saif_CV.pdf"
+              href="https://drive.google.com/file/d/1BNUD6_cdueFHyXuWEKfXYB_WO4j8Blw9/view?usp=sharing"
+              target="blank"
               download
               className="border border-gray-400 hover:bg-gray-800 text-white px-6 py-3 rounded-md flex items-center gap-2"
             >

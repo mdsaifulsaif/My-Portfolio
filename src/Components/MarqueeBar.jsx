@@ -14,7 +14,7 @@ const MarqueeBar = () => {
             key={i}
             className="flex items-center text-white text-lg md:text-base font-semibold mx-4"
           >
-            {words[i % 3]} <FaPlus className="mx-2 text-green-400" />
+            {words[i % 3]} <FaPlus className="mx-2 text-blue-500" />
           </span>
         ))}
       </Marquee>

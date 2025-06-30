@@ -6,15 +6,15 @@ import SkillCard from "../Components/SkillCard";
 // data/skills.js
 const skills = [
   { name: "HTML", level: "98%", icon: "SiHtml5" },
-  { name: "CSS", level: "95%", icon: "SiCss3" },
-  { name: "Tailwind", level: "94%", icon: "SiTailwindcss" },
-  { name: "JavaScript", level: "92%", icon: "SiJavascript" },
-  { name: "React", level: "90%", icon: "SiReact" },
-  { name: "Node.js", level: "88%", icon: "SiNodedotjs" },
-  { name: "Express", level: "85%", icon: "SiExpress" },
+  { name: "CSS", level: "85%", icon: "SiCss3" },
+  { name: "Tailwind", level: "80%", icon: "SiTailwindcss" },
+  { name: "JavaScript", level: "75%", icon: "SiJavascript" },
+  { name: "React", level: "70%", icon: "SiReact" },
+  { name: "Node.js", level: "65%", icon: "SiNodedotjs" },
+  { name: "Firebase", level: "86%", icon: "SiFirebase" },
+  { name: "MongoDB", level: "73%", icon: "SiMongodb" },
   { name: "PHP", level: "84%", icon: "SiPhp" },
   { name: "WordPress", level: "90%", icon: "SiWordpress" },
-  { name: "Firebase", level: "86%", icon: "SiFirebase" },
   { name: "Bootstrap", level: "93%", icon: "SiBootstrap" },
 ];
 

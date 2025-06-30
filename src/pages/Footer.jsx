@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { FaGithub, FaLinkedin, FaFacebook } from "react-icons/fa";
-
+import { FaGithub, FaLinkedin, FaFacebook, FaDribbble } from "react-icons/fa";
+import logo from "../assets/Images/sitelogo1.png";
 const Footer = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -26,8 +26,11 @@ const Footer = () => {
           {/* Left: Logo + About + Socials */}
           <div className="md:w-1/2 space-y-6">
             {/* Logo */}
-            <div className="text-2xl font-bold bg-gradient-to-r from-purple-600 via-indigo-500 to-blue-500 bg-clip-text text-transparent">
-              Saiful.dev
+            <div className="text-2xl flex items-center -pl-20  font-bold bg-gradient-to-r from-purple-600 via-indigo-500 to-blue-500 bg-clip-text text-transparent">
+              <img className="w-[70px] -ml-5 rounded-full " src={logo} alt="" />{" "}
+              <span className="text-2xl font-bold bg-gradient-to-r from-purple-600 via-indigo-500 to-blue-500 bg-clip-text text-transparent">
+                Saiful.dev
+              </span>
             </div>
 
             {/* Description */}
@@ -44,21 +47,25 @@ const Footer = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <FaGithub className="hover:text-[#129990] transition" />
+                <FaGithub className="hover:text-blue-500 transition" />
               </a>
               <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/saiful-saif-3036362b3/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <FaLinkedin className="hover:text-[#129990] transition" />
+                <FaLinkedin className="hover:text-blue-500 transition" />
               </a>
               <a
-                href="https://facebook.com"
+                href="https://dribbble.com/your-dribbble"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <FaFacebook className="hover:text-[#129990] transition" />
+                {/* <FaFacebook className="hover:text-[#129990] transition" /> */}
+                <FaDribbble
+                  className="hover:text-blue-500 transition"
+                  size={20}
+                />
               </a>
             </div>
           </div>
