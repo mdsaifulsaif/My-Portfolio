@@ -5,7 +5,7 @@ import Footer from "../Footer";
 
 function HomeLayOut() {
   return (
-    <div>
+    <div className="">
       <Navbar></Navbar>
       <Outlet></Outlet>
       <Footer></Footer>
