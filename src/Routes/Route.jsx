@@ -10,6 +10,7 @@ import Projects from "../pages/Projects";
 import Footer from "../pages/Footer";
 import SkillsSection from "../pages/SkillsSection";
 import ContactForm from "../pages/ContactForm";
+import Services from "../pages/Services";
 
 export const router = createBrowserRouter([
   {
@@ -41,6 +42,10 @@ export const router = createBrowserRouter([
       {
         path: "/contact",
         Component: ContactForm,
+      },
+      {
+        path: "/services",
+        Component: Services,
       },
     ],
   },

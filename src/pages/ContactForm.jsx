@@ -7,7 +7,7 @@ import {
 
 export default function ContactForm() {
   return (
-    <div className="w-11/12 mx-auto px-3 md:px-10  text-white  mt-16 mb-10  ">
+    <div className="w-11/12 mx-auto    text-white  mt-16 mb-10  ">
       <div className="text-center ">
         <h2 className="text-3xl md:text-4xl font-bold mb-12">
           Contact{" "}
@@ -53,7 +53,7 @@ export default function ContactForm() {
 
           {/* Email & WhatsApp */}
 
-          <div className="grid grid-cols-2 gap-4">
+          <div className="grid col-end-1 md:grid-cols-2 gap-4">
             <div className="flex items-center space-x-3">
               <FaPhoneAlt className="text-xl" />
               <span>+8801727841588</span>

@@ -61,7 +61,7 @@ const ProjectCard = ({ project }) => {
               href={project.live}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 text-sm font-medium bg-gradient-to-r from-blue-600 to-purple-600 hover:opacity-90 px-4 py-2 rounded-lg transition"
+              className="flex items-center gap-2 text-sm font-medium bg-gradient-to-r cursor-pointer from-purple-900 via-indigo-900 to-blue-900  hover:opacity-90 px-4 py-2 rounded-lg transition"
             >
               <FaExternalLinkAlt /> Live Demo
             </a>

@@ -6,10 +6,15 @@ import {
   FaGithub,
   FaDribbble,
 } from "react-icons/fa";
-import { MdCall } from "react-icons/md";
+import {
+  SiReact,
+  SiExpress,
+  SiMongodb,
+  SiJavascript,
+  SiNodedotjs,
+} from "react-icons/si";
 import { gsap } from "gsap";
-import profileImage from "../assets/Images/Md.Saiful Saif1.png";
-// import bgdd from "../assets/Images/splash.png";
+import profileImage from "../assets/Images/Md.Saiful Saif.png";
 import MarqueeBar from "./MarqueeBar";
 import { Link } from "react-router";
 
@@ -93,27 +98,74 @@ const Hero = () => {
           </div>
         </div>
 
-        {/* Right Side Image */}
+        {/* Right Side Image with Tech Icons */}
         <div className="md:w-1/2 mb-10 md:mb-0 flex justify-center items-center relative z-10">
           {/* Glowing animated background */}
           <div
             ref={glowRef}
-            className="absolute  w-[280px] h-[280px] md:w-[360px] md:h-[360px] bg-gradient-to-r from-purple-700 via-indigo-700 to-blue-700 opacity-30 shadow-2xl blur-xl md:blur-xl rounded-3xl z-0"
+            className="absolute w-[280px] h-[280px] md:w-[360px] md:h-[360px] bg-gradient-to-r from-purple-700 via-indigo-700 to-blue-700 opacity-30 shadow-2xl blur-xl md:blur-xl rounded-3xl z-0"
           ></div>
 
           {/* Profile Image */}
-
           <img
             src={profileImage}
             alt="Saiful Saif"
-            className="relative  z-10 w-full md:w-[360px] h-auto rounded-xl "
+            className="relative z-20 w-full md:w-[360px] h-auto rounded-xl"
           />
+
+          {/* Tech Icons positioned around image */}
+          <div className="absolute w-[320px] h-[320px] md:w-[380px] md:h-[380px] z-30 pointer-events-none">
+            {/* React - Top Center */}
+            <div className="absolute top-0 left-1/5 transform -translate-x-1/2 pointer-events-auto">
+              <SiReact
+                size={30}
+                className="text-cyan-400 hover:scale-110 hover:rotate-6 transition-transform duration-300 cursor-pointer"
+                title="React"
+              />
+            </div>
+
+            {/* Express - Left Middle */}
+            <div className="absolute top-1/2 left-0 transform -translate-y-1/2 pointer-events-auto">
+              <SiExpress
+                size={30}
+                className="text-gray-300 hover:scale-110 hover:rotate-6 transition-transform duration-300 cursor-pointer"
+                title="Express.js"
+              />
+            </div>
+
+            {/* MongoDB - Bottom Center */}
+            <div className="absolute top-7   left-7/8 transform -translate-x-1/2 pointer-events-auto">
+              <SiMongodb
+                size={30}
+                className="text-green-500 hover:scale-110 hover:rotate-6 transition-transform duration-300 cursor-pointer"
+                title="MongoDB"
+              />
+            </div>
+
+            {/* JavaScript - Right Middle */}
+            <div className="absolute top-1/2 right-0 transform -translate-y-1/2 pointer-events-auto">
+              <SiJavascript
+                size={30}
+                className="text-yellow-400 hover:scale-110 hover:rotate-6 transition-transform duration-300 cursor-pointer"
+                title="JavaScript"
+              />
+            </div>
+
+            {/* Node.js - Bottom Right */}
+            <div className="absolute bottom-4 right-6 pointer-events-auto">
+              <SiNodedotjs
+                size={30}
+                className="text-green-400 hover:scale-110 hover:rotate-6 transition-transform duration-300 cursor-pointer"
+                title="Node.js"
+              />
+            </div>
+          </div>
         </div>
       </div>
 
       {/* Marquee */}
       <div className="w-11/12 mx-auto h-20 bg-gradient-to-r from-purple-900 via-indigo-900 to-blue-900">
-        <MarqueeBar></MarqueeBar>
+        <MarqueeBar />
       </div>
     </>
   );

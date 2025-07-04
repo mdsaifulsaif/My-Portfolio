@@ -1,3 +1,4 @@
+import Aos from "aos";
 import React from "react";
 import {
   FaLaptopCode,
@@ -91,7 +92,7 @@ const services = [
 
 const Services = () => {
   return (
-    <section className="text-white my-5 py-5 px-6 w-11/12 mx-auto ">
+    <section className="text-white my-5 pt-15   w-11/12 mx-auto ">
       <div className="text-center mb-12">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
           My{" "}

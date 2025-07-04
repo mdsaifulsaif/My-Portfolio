@@ -14,6 +14,7 @@ const Navbar = () => {
     { name: "About", to: "/about" },
     { name: "Projects", to: "/projects" },
     { name: "Skills", to: "/skills" },
+    { name: "Services", to: "/services" },
     { name: "Contact", to: "/contact" },
   ];
 
@@ -41,7 +42,7 @@ const Navbar = () => {
           : "bg-transparent"
       }`}
     >
-      <div className="w-11/12 md:px-10 mx-auto  py-2 ">
+      <div className="w-11/12  mx-auto  py-2 ">
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link to="/">

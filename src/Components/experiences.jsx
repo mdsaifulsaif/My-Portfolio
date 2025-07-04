@@ -4,9 +4,9 @@ const experiences = [
   {
     duration: "Jun 2023 – Aug 2024",
     company: "E-Learning & Earning Ltd.",
-    position: "Jr. Web Developer",
+    position: "Jr. Wordpress Developer",
     description:
-      "Worked on responsive front-end applications using React and Tailwind CSS. Integrated REST APIs and ensured cross-browser compatibility.",
+      "Worked on WordPress-based websites, including custom theme development, plugin customization, and responsive design implementation. Ensured performance optimization and cross-browser compatibility.",
     link: "#", // You can replace this with actual company link
   },
   {
@@ -21,7 +21,7 @@ const experiences = [
 
 const Experience = () => {
   return (
-    <section className=" text-white py-16 px-6 md:px-20">
+    <section className=" w-11/12 mx-auto text-white py-16 ">
       <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
         Experience{" "}
         <span className="bg-gradient-to-r from-purple-600 via-indigo-500 to-blue-500 bg-clip-text text-transparent">
