@@ -7,7 +7,9 @@ function HomeLayOut() {
   return (
     <div className="">
       <Navbar></Navbar>
+
       <Outlet></Outlet>
+
       <Footer></Footer>
     </div>
   );

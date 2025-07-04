@@ -21,7 +21,7 @@ const Projects = () => {
     return <LoaddingPage></LoaddingPage>;
   }
   return (
-    <div className=" px-4 md:px-10 mb-10 mt-16   mx-auto">
+    <div className="  md:px-10 mb-10 mt-16 w-11/12 px-4  mx-auto">
       <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
         HERE'S A GLIMPSE OF SOME EXCITING 🧑‍💻 <br />
         <span className="bg-gradient-to-r from-purple-600 via-indigo-500 to-blue-500 bg-clip-text text-transparent">

@@ -14,6 +14,7 @@ const Navbar = () => {
     { name: "About", to: "/about" },
     { name: "Projects", to: "/projects" },
     { name: "Skills", to: "/skills" },
+    { name: "Contact", to: "/contact" },
   ];
 
   const handleLinkClick = () => setIsOpen(false);
@@ -44,7 +45,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link to="/">
-            <div className="text-2xl cursor-pointer flex items-center justify-center font-bold bg-gradient-to-r from-purple-600 via-indigo-500 to-blue-500 bg-clip-text text-transparent">
+            <div className="text-2xl cursor-pointer flex items-center justify-center font-bold bg-gradient-to-r from-purple-900 via-indigo-900 to-blue-900 bg-clip-text text-transparent">
               <img
                 className="w-[70px] -ml-5  rounded-full "
                 src={logo}

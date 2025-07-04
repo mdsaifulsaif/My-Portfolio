@@ -6,17 +6,22 @@ import SkillsSection from "./SkillsSection";
 import Qualification from "./Qualification";
 import Experience from "../Components/experiences";
 import Education from "../Components/Education";
+import ContactForm from "./ContactForm";
+import ServiceSection from "./Services";
 
 function Home() {
   return (
-    <div className="w-11/12 mx-auto md:px-10  ">
+    <div className=" md:px-10   ">
       <Hero></Hero>
       <AboutMe></AboutMe>
       <SkillsSection></SkillsSection>
+      <ServiceSection></ServiceSection>
+
       {/* <Qualification></Qualification> */}
       {/* <Education></Education> */}
       <Experience></Experience>
       <Projects></Projects>
+      <ContactForm></ContactForm>
     </div>
   );
 }

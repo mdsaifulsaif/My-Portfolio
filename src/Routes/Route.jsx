@@ -9,6 +9,7 @@ import ProjectDetails from "../pages/ProjectDetails";
 import Projects from "../pages/Projects";
 import Footer from "../pages/Footer";
 import SkillsSection from "../pages/SkillsSection";
+import ContactForm from "../pages/ContactForm";
 
 export const router = createBrowserRouter([
   {
@@ -35,6 +36,11 @@ export const router = createBrowserRouter([
       {
         path: "/project/:id",
         Component: ProjectDetails,
+      },
+
+      {
+        path: "/contact",
+        Component: ContactForm,
       },
     ],
   },

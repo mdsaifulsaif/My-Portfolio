@@ -1,3 +1,4 @@
+import { Link } from "react-router";
 import profileImage from "../assets/Images/Md.Saiful Saif1.png";
 
 const aboutData = {
@@ -10,7 +11,7 @@ const aboutData = {
 
 const AboutMe = () => {
   return (
-    <section className="text-white px-4 md:pl-15 md:pr-10">
+    <div className="w-11/12 mx-auto text-white px-4 md:pl-15 md:pr-10">
       <div className="mt-16 mx-auto flex flex-col md:flex-row items-center gap-10">
         {/* Image with gradient border */}
         <div className="relative w-64 h-80">
@@ -32,19 +33,20 @@ const AboutMe = () => {
               {aboutData.title.split(" ")[1]}
             </span>
           </h2>
-          <p className="text-white/90 leading-relaxed mb-4">
+          <p className="text-white/90  leading-relaxed mb-4">
             {aboutData.description1}
           </p>
           <p className="text-white/80 leading-relaxed mb-6">
             {aboutData.description2}
           </p>
           <div className="flex gap-4">
-            <a
+            <Link
+              to="/contact"
               href="#contact"
               className="bg-gradient-to-r cursor-pointer from-purple-900 via-indigo-900 to-blue-900 z-0 text-white font-semibold px-6 py-2 rounded transition"
             >
               Hire Me
-            </a>
+            </Link>
             <a
               href="https://drive.google.com/file/d/1BNUD6_cdueFHyXuWEKfXYB_WO4j8Blw9/view?usp=sharing"
               target="_blank"
@@ -55,7 +57,7 @@ const AboutMe = () => {
           </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 
