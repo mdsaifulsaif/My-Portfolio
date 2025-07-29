@@ -5,7 +5,7 @@ import { Link, NavLink } from "react-router"; // Fixed import
 // import logo from "../assets/Images/Logo.png";
 import logo from "../assets/Images/sitelogo1.png";
 
-const Navbar = () => {
+const Navbar = ({ setThem, theme }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
@@ -42,7 +42,7 @@ const Navbar = () => {
           : "bg-transparent"
       }`}
     >
-      <div className="w-11/12  mx-auto  py-2 ">
+      <div className="md:w-6xl px-5 md:px-0  mx-auto  py-2 ">
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link to="/">
@@ -71,11 +71,18 @@ const Navbar = () => {
               </li>
             ))}
           </ul>
+          {/* <div>
+            <button onClick={() => setThem(!theme)}>dark</button>
+          </div> */}
 
           {/* Mobile Icon */}
           <div className="md:hidden z-50">
             <button onClick={() => setIsOpen(!isOpen)}>
-              {isOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
+              {isOpen ? (
+                <FaTimes size={24} />
+              ) : (
+                <FaBars className="dark:text-gray-800" size={24} />
+              )}
             </button>
           </div>
         </div>

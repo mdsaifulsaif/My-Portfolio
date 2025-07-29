@@ -37,7 +37,7 @@ const ProjectDetails = () => {
   }
 
   return (
-    <div className="w-11/12 mx-auto min-h-screen text-white px-4 md:px-20 py-16">
+    <div className="md:w-6xl mx-auto min-h-screen text-white px-4 md:px-20 py-16">
       <Link
         to="/projects"
         className="text-blue-500 hover:underline text-sm mb-6 inline-block"

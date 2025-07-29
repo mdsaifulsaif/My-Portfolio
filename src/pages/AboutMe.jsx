@@ -11,7 +11,7 @@ const aboutData = {
 
 const AboutMe = () => {
   return (
-    <div className="w-11/12 mx-auto text-white  md:pl-15 md:pr-10">
+    <div className="md:w-6xl mx-auto text-white  md:pl-15 px-5 md:pr-10">
       <div className="mt-16 mx-auto flex flex-col md:flex-row items-center gap-10">
         {/* Image with gradient border */}
         <div className="relative w-64 h-80">

@@ -32,19 +32,20 @@ const Hero = () => {
 
   return (
     <>
-      <div className="w-11/12 mx-auto text-white pt-20 pb-10 px-4 md:px-0 flex flex-col-reverse md:flex-row items-center justify-between relative overflow-visible">
+      <div className="md:w-6xl mx-auto text-white pt-20 pb-10 px-4 md:px-0 flex flex-col-reverse md:flex-row items-center justify-between relative overflow-visible">
         {/* Left Content */}
         <div className="md:w-1/2 text-center md:text-left space-y-6 z-10">
-          <h1 className="text-3xl md:text-5xl font-bold leading-tight">
+          <h1 className="text-3xl dark:text-gray-800 md:text-5xl font-bold leading-tight">
             Hello Mate <FaHandPaper className="inline text-yellow-400 ml-2" />
             <br />
             I’m{" "}
             <span className="bg-gradient-to-r from-purple-900 via-indigo-900 to-blue-900 bg-clip-text text-transparent">
               Saiful Saif
             </span>
-            <br />a <span className="text-white">Web Developer</span>
+            <br />a{" "}
+            <span className="text-white dark:text-gray-800">Web Developer</span>
           </h1>
-          <p className="text-gray-300 sm max-w-md mx-auto md:mx-0">
+          <p className="text-gray-300 dark:text-gray-700 sm max-w-md mx-auto md:mx-0">
             Hi, I’m Saiful – a passionate MERN stack developer. I help brands
             turn ideas into high quality products.
           </p>
@@ -164,7 +165,7 @@ const Hero = () => {
       </div>
 
       {/* Marquee */}
-      <div className="w-11/12 mx-auto h-20 bg-gradient-to-r from-purple-900 via-indigo-900 to-blue-900">
+      <div className="md:w-6xl mx-auto h-20 bg-gradient-to-r from-purple-900 via-indigo-900 to-blue-900">
         <MarqueeBar />
       </div>
     </>

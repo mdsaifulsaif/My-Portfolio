@@ -7,7 +7,7 @@ import {
 
 export default function ContactForm() {
   return (
-    <div className="w-11/12 mx-auto    text-white  mt-16 mb-10  ">
+    <div className="md:w-6xl mx-auto  px-5 md:px-0  text-white  mt-16 mb-10  ">
       <div className="text-center ">
         <h2 className="text-3xl md:text-4xl font-bold mb-12">
           Contact{" "}

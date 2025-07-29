@@ -21,7 +21,7 @@ const experiences = [
 
 const Experience = () => {
   return (
-    <section className=" w-11/12 mx-auto text-white py-16 ">
+    <section className=" md:w-6xl px-5 md:px-0 mx-auto text-white py-16 ">
       <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
         Experience{" "}
         <span className="bg-gradient-to-r from-purple-600 via-indigo-500 to-blue-500 bg-clip-text text-transparent">

@@ -1,12 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import { Outlet } from "react-router";
 import Navbar from "../../Components/Navbar";
 import Footer from "../Footer";
 
 function HomeLayOut() {
+  const [theme, setThem] = useState(true);
+  console.log(theme);
   return (
-    <div className="">
-      <Navbar></Navbar>
+    <div className={` ${theme ? "" : "dark"}  dark:bg-white `}>
+      <Navbar setThem={setThem} theme={theme}></Navbar>
 
       <Outlet></Outlet>
 

@@ -1,5 +1,6 @@
 @import "tailwindcss";
 @plugin "daisyui";
+@custom-variant dark (&:where(.dark, .dark *));
 
 nav a.active {
   text-decoration: underline;

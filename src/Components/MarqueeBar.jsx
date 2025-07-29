@@ -7,7 +7,7 @@ const words = ["Design", "Develop", "Discover"];
 
 const MarqueeBar = () => {
   return (
-    <div className=" bg-gray-800  -rotate-2 py-5 shadow-2xs">
+    <div className=" bg-gray-800 -rotate-2 py-7 shadow-2xs">
       <Marquee gradient={false} speed={60}>
         {Array.from({ length: 15 }, (_, i) => (
           <span

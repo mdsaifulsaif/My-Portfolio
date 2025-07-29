@@ -20,8 +20,8 @@ import { Link } from "react-router";
 
 export default function Footer() {
   return (
-    <footer className="text-gray-700  border-t-1 py-10 border-gray-500  mt-15">
-      <div className="w-11/12  mx-auto grid md:grid-cols-4 gap-10">
+    <footer className="text-gray-700 px-5 md:px-0  border-t-1 py-10 border-gray-500  mt-15">
+      <div className="md:w-6xl  mx-auto grid md:grid-cols-4 gap-10">
         {/* Logo and Description */}
         <div>
           <Link to="/">
