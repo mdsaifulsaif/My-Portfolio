@@ -1,6 +1,15 @@
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 const Education = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: false,
+    });
+  }, []);
   return (
-    <div className="px-5">
+    <div data-aos="zoom-in" className="px-5">
       <div className="bg-gradient-to-br   from-purple-900 via-indigo-900 to-blue-900 text-green-400 p-6 mt-15 rounded-xl font-mono text-sm w-full max-w-xl mx-auto shadow-xl">
         <pre className="whitespace-pre-wrap">
           {`const education = {
