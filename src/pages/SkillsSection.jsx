@@ -84,7 +84,10 @@ const SkillsSection = () => {
   }, []);
   return (
     <section className=" md:w-6xl px-5 md:px-0 pt-15 mx-auto">
-      <h2 className="text-3xl md:text-4xl  font-bold text-center mb-10">
+      <h2
+        data-aos="fade-right"
+        className="text-3xl md:text-4xl  font-bold text-center mb-10"
+      >
         My{" "}
         <span className="bg-gradient-to-r from-purple-600 via-indigo-500 to-blue-500 bg-clip-text text-transparent">
           Skills

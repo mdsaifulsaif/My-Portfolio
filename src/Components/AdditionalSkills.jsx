@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import {
   SiTailwindcss,
   SiFigma,
@@ -11,6 +11,8 @@ import {
 import { FaImage, FaRegGem } from "react-icons/fa";
 import { MdWidgets } from "react-icons/md";
 import { AiOutlineAntDesign } from "react-icons/ai";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const skills = [
   {
@@ -73,6 +75,12 @@ const skills = [
 ];
 
 const AdditionalSkills = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: false,
+    });
+  }, []);
   return (
     <div className="mt-15 max-w-5xl mx-auto px-5">
       <h2 className="text-3xl md:text-4xl font-bold text-center mb-8">
@@ -84,6 +92,7 @@ const AdditionalSkills = () => {
       <div className="flex flex-wrap justify-center gap-4">
         {skills.map((skill, index) => (
           <div
+            data-aos="fade-right"
             key={index}
             className="w-[140px] h-[140px] p-4 bg-gray-900 rounded-xl border border-blue-500 flex flex-col justify-center items-center text-center text-white shadow-md"
           >

@@ -1,4 +1,6 @@
 import { FaArrowUpRightFromSquare } from "react-icons/fa6";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const experiences = [
   {
@@ -20,9 +22,18 @@ const experiences = [
 ];
 
 const Experience = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // Animation duration
+      once: false, // Animation will happen every time the element is in view
+    });
+  }, []);
   return (
     <section className=" md:w-6xl px-5 md:px-0 mx-auto text-white py-16 ">
-      <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
+      <h2
+        data-aos="fade-right"
+        className="text-3xl md:text-4xl font-bold text-center mb-12"
+      >
         Experience{" "}
         <span className="bg-gradient-to-r from-purple-600 via-indigo-500 to-blue-500 bg-clip-text text-transparent">
           .

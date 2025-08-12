@@ -1,5 +1,5 @@
 import Aos from "aos";
-import React from "react";
+import React, { useEffect } from "react";
 import {
   FaLaptopCode,
   FaMobileAlt,
@@ -8,6 +8,8 @@ import {
   FaServer,
   FaCloudUploadAlt,
 } from "react-icons/fa";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const services = [
   {
@@ -91,16 +93,25 @@ const services = [
 ];
 
 const Services = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // Animation duration
+      once: false, // Animation will happen every time the element is in view
+    });
+  }, []);
   return (
     <section className="text-white my-5 pt-15 px-5 md:px-0  md:w-6xl mx-auto ">
       <div className="text-center mb-12">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
+        <h2
+          data-aos="fade-right"
+          className="text-3xl md:text-4xl font-bold text-center mb-4"
+        >
           My{" "}
           <span className="bg-gradient-to-r from-purple-600 via-indigo-500 to-blue-500 bg-clip-text text-transparent">
             Services
           </span>
         </h2>
-        <p className="text-gray-400">
+        <p data-aos="fade-right" className="text-gray-400">
           Comprehensive web development services to bring your ideas to life
         </p>
       </div>
@@ -108,6 +119,7 @@ const Services = () => {
       <div className="grid md:grid-cols-3 gap-6">
         {services.map((service, index) => (
           <div
+            data-aos="fade-up"
             key={index}
             className={`bg-gray-800 rounded-xl p-5 shadow-md transition-colors duration-300 ${service.hoverBg} `}
           >
