@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import {
   SiReact,
   SiJavascript,
@@ -16,6 +16,8 @@ import {
   SiMysql,
 } from "react-icons/si";
 import AdditionalSkills from "../Components/AdditionalSkills";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const skills = [
   {
@@ -74,6 +76,12 @@ const skills = [
 ];
 
 const SkillsSection = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: false,
+    });
+  }, []);
   return (
     <section className=" md:w-6xl px-5 md:px-0 pt-15 mx-auto">
       <h2 className="text-3xl md:text-4xl  font-bold text-center mb-10">
@@ -85,8 +93,9 @@ const SkillsSection = () => {
       <div className="grid md:grid-cols-2 gap-8">
         {skills.map((category, index) => (
           <div
+            data-aos="fade-up"
             key={index}
-            className={`border-2 rounded-xl p-6 shadow-lg  text-white border-blue-500 ${
+            className={`border-2 rounded-xl p-6 shadow-lg overflow-hidden  text-white border-blue-500 ${
               skills.length % 2 !== 0 && index === skills.length - 1
                 ? "md:col-span-2 md:mx-auto md:w-1/2"
                 : ""
@@ -103,7 +112,7 @@ const SkillsSection = () => {
             </div>
 
             {/* Skills */}
-            <div className="space-y-4">
+            <div data-aos="fade-left" className="space-y-4">
               {category.skills.map((skill, i) => (
                 <div key={i}>
                   <div className="flex justify-between items-center mb-1 text-sm font-medium">

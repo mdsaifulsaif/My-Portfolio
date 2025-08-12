@@ -5,7 +5,7 @@ import Footer from "../Footer";
 
 function HomeLayOut() {
   const [theme, setThem] = useState(true);
-  console.log(theme);
+
   return (
     <div className={` ${theme ? "" : "dark"}  dark:bg-white `}>
       <Navbar setThem={setThem} theme={theme}></Navbar>
