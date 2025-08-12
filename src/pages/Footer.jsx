@@ -17,28 +17,41 @@ import {
 } from "react-icons/fa";
 import logo from "../assets/Images/Logo.png";
 import { Link } from "react-router";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 export default function Footer() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+  }, []);
   return (
     <footer className="text-gray-700 px-5 md:px-0  border-t-1 py-10 border-gray-500  mt-15">
       <div className="md:w-6xl  mx-auto grid md:grid-cols-4 gap-10">
         {/* Logo and Description */}
         <div>
           <Link to="/">
-            <div className="text-2xl cursor-pointer -ml-38 md:-ml-13 flex items-center justify-center font-bold bg-gradient-to-r from-purple-600 via-indigo-500 to-blue-500 bg-clip-text text-transparent">
+            <div
+              data-aos="fade-right"
+              className="text-2xl cursor-pointer -ml-38 md:-ml-13 flex items-center justify-center font-bold bg-gradient-to-r from-purple-600 via-indigo-500 to-blue-500 bg-clip-text text-transparent"
+            >
               <img className="w-[70px] -ml-5 rounded-full" src={logo} alt="" />
               <span className="text-3xl font-bold bg-gradient-to-r from-purple-600 via-indigo-500 to-blue-500 bg-clip-text text-transparent">
                 Saiful.dev
               </span>
             </div>
           </Link>
-          <p className="text-sm text-gray-200 mt-2">
+          <p data-aos="zoom-in-left" className="text-sm text-gray-200 mt-2">
             I'm a MERN Stack Developer specializing in creating beautiful, fast,
             and scalable web applications. Let's connect and build something
             amazing!
           </p>
           <div className="flex mt-4 space-x-4 text-xl text-gray-200">
             <a
+              data-aos="zoom-in"
               href="https://github.com/mdsaifulsaif"
               target="_blank"
               rel="noopener noreferrer"
@@ -46,6 +59,7 @@ export default function Footer() {
               <FaGithub className="hover:text-blue-500 transition" />
             </a>
             <a
+              data-aos="zoom-in"
               href="https://www.linkedin.com/in/saiful-saif-3036362b3/"
               target="_blank"
               rel="noopener noreferrer"
@@ -53,6 +67,7 @@ export default function Footer() {
               <FaLinkedin className="hover:text-blue-500 transition" />
             </a>
             <a
+              data-aos="zoom-in"
               href="https://dribbble.com/your-dribbble"
               target="_blank"
               rel="noopener noreferrer"
@@ -63,7 +78,7 @@ export default function Footer() {
         </div>
 
         {/* Quick Links */}
-        <div>
+        <div data-aos="fade-right">
           <h3 className="text-lg font-semibold mb-4 text-gray-100">
             Quick Links
           </h3>
@@ -101,7 +116,7 @@ export default function Footer() {
         </div>
 
         {/* Services */}
-        <div>
+        <div data-aos="fade-right">
           <h3 className="text-lg font-semibold mb-4 text-gray-200">Services</h3>
           <ul className="space-y-2 text-gray-200 text-sm">
             <li className="flex items-center gap-2">
@@ -120,23 +135,32 @@ export default function Footer() {
         </div>
 
         {/* View My Work */}
-        <div>
+        <div data-aos="fade-right">
           <h3 className="text-lg font-semibold mb-4 text-gray-200">
             View My Work
           </h3>
           <ul className="space-y-2 text-gray-200 text-sm">
             <li>
-              <a href="#" className="hover:underline flex items-center gap-2">
+              <a
+                href="https://www.behance.net/mdsaifulislam423"
+                className="hover:underline flex items-center gap-2"
+              >
                 <FaBehance /> Behance
               </a>
             </li>
             <li>
-              <a href="#" className="hover:underline flex items-center gap-2">
+              <a
+                href="https://dribbble.com/mdsaifulsaif"
+                className="hover:underline flex items-center gap-2"
+              >
                 <FaDribbble /> Dribbble
               </a>
             </li>
             <li>
-              <a href="#" className="hover:underline flex items-center gap-2">
+              <a
+                href="https://www.pinterest.com/mdsaifulsaif1/"
+                className="hover:underline flex items-center gap-2"
+              >
                 <FaPinterest /> Pinterest
               </a>
             </li>

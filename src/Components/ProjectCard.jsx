@@ -1,11 +1,22 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { FaExternalLinkAlt } from "react-icons/fa";
 import { FaGithub, FaArrowRight, FaArrowTrendUp } from "react-icons/fa6";
 import { Link } from "react-router";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const ProjectCard = ({ project }) => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+  }, []);
   return (
-    <div className="text-white rounded-2xl md:p-5 shadow-md hover:shadow-indigo-600/30 transition-all duration-300 flex flex-col h-full">
+    <div
+      data-aos="fade-up"
+      className="text-white rounded-2xl md:p-5 shadow-md hover:shadow-indigo-600/30 transition-all duration-300 flex flex-col h-full"
+    >
       {/* Project Image */}
       <div className="relative overflow-hidden">
         <img

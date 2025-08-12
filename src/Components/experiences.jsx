@@ -1,6 +1,7 @@
 import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const experiences = [
   {
@@ -42,7 +43,7 @@ const Experience = () => {
 
       <div className="space-y-12">
         {experiences.map((exp, index) => (
-          <div key={index} className="group">
+          <div data-aos="zoom-in-left" key={index} className="group">
             <span className="text-sm font-medium  bg-gradient-to-r from-purple-600 via-indigo-500 to-blue-500 bg-clip-text text-transparent">
               {exp.duration}
             </span>

@@ -21,12 +21,49 @@ import { Link } from "react-router";
 const Hero = () => {
   const glowRef = useRef(null);
 
+  // Icon refs
+  const reactIcon = useRef(null);
+  const expressIcon = useRef(null);
+  const mongoIcon = useRef(null);
+  const jsIcon = useRef(null);
+  const nodeIcon = useRef(null);
+
   useEffect(() => {
+    // Background glow rotation
     gsap.to(glowRef.current, {
       rotate: 360,
       duration: 30,
       repeat: -1,
       ease: "linear",
+    });
+
+    // Icon rotation + floating animation
+    const icons = [
+      reactIcon.current,
+      expressIcon.current,
+      mongoIcon.current,
+      jsIcon.current,
+      nodeIcon.current,
+    ];
+
+    icons.forEach((icon, i) => {
+      // Floating effect
+      gsap.to(icon, {
+        y: -10,
+        duration: 1.5,
+        repeat: -1,
+        yoyo: true,
+        ease: "easeInOut",
+        delay: i * 0.2,
+      });
+
+      // Slow rotation
+      gsap.to(icon, {
+        rotate: 360,
+        duration: 8 + i * 2,
+        repeat: -1,
+        ease: "linear",
+      });
     });
   }, []);
 
@@ -114,49 +151,59 @@ const Hero = () => {
             className="relative z-20 w-full md:w-[360px] h-auto rounded-xl"
           />
 
-          {/* Tech Icons positioned around image */}
+          {/* Tech Icons */}
           <div className="absolute w-[320px] h-[320px] md:w-[380px] md:h-[380px] z-30 pointer-events-none">
-            {/* React - Top Center */}
-            <div className="absolute top-0 left-1/5 transform -translate-x-1/2 pointer-events-auto">
+            <div
+              ref={reactIcon}
+              className="absolute top-0 left-1/5 transform -translate-x-1/2 pointer-events-auto"
+            >
               <SiReact
                 size={30}
-                className="text-cyan-400 hover:scale-110 hover:rotate-6 transition-transform duration-300 cursor-pointer"
+                className="text-cyan-400 cursor-pointer"
                 title="React"
               />
             </div>
 
-            {/* Express - Left Middle */}
-            <div className="absolute top-1/2 left-0 transform -translate-y-1/2 pointer-events-auto">
+            <div
+              ref={expressIcon}
+              className="absolute top-1/2 left-0 transform -translate-y-1/2 pointer-events-auto"
+            >
               <SiExpress
                 size={30}
-                className="text-gray-300 hover:scale-110 hover:rotate-6 transition-transform duration-300 cursor-pointer"
+                className="text-gray-300 cursor-pointer"
                 title="Express.js"
               />
             </div>
 
-            {/* MongoDB - Bottom Center */}
-            <div className="absolute top-7   left-7/8 transform -translate-x-1/2 pointer-events-auto">
+            <div
+              ref={mongoIcon}
+              className="absolute top-7 left-7/8 transform -translate-x-1/2 pointer-events-auto"
+            >
               <SiMongodb
                 size={30}
-                className="text-green-500 hover:scale-110 hover:rotate-6 transition-transform duration-300 cursor-pointer"
+                className="text-green-500 cursor-pointer"
                 title="MongoDB"
               />
             </div>
 
-            {/* JavaScript - Right Middle */}
-            <div className="absolute top-1/2 right-0 transform -translate-y-1/2 pointer-events-auto">
+            <div
+              ref={jsIcon}
+              className="absolute top-1/2 right-0 transform -translate-y-1/2 pointer-events-auto"
+            >
               <SiJavascript
                 size={30}
-                className="text-yellow-400 hover:scale-110 hover:rotate-6 transition-transform duration-300 cursor-pointer"
+                className="text-yellow-400 cursor-pointer"
                 title="JavaScript"
               />
             </div>
 
-            {/* Node.js - Bottom Right */}
-            <div className="absolute bottom-4 right-6 pointer-events-auto">
+            <div
+              ref={nodeIcon}
+              className="absolute bottom-4 right-6 pointer-events-auto"
+            >
               <SiNodedotjs
                 size={30}
-                className="text-green-400 hover:scale-110 hover:rotate-6 transition-transform duration-300 cursor-pointer"
+                className="text-green-400 cursor-pointer"
                 title="Node.js"
               />
             </div>

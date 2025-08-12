@@ -2,10 +2,19 @@
 import React, { useEffect, useState } from "react";
 import ProjectCard from "../Components/ProjectCard";
 import LoaddingPage from "./LoaddingPage";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Projects = () => {
   const [projectsData, setprojectsData] = useState([]);
   const [loadding, setLodding] = useState(true);
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: false,
+    });
+  }, []);
 
   useEffect(() => {
     fetch("/projectdata.json")
@@ -22,7 +31,10 @@ const Projects = () => {
   }
   return (
     <div className=" px-5 md:px-0  mb-10 mt-16 md:w-6xl  mx-auto">
-      <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
+      <h2
+        data-aos="fade-right"
+        className="text-3xl md:text-4xl font-bold text-center mb-12"
+      >
         HERE'S A GLIMPSE OF SOME EXCITING 🧑‍💻 <br />
         <span className="bg-gradient-to-r from-purple-600 via-indigo-500 to-blue-500 bg-clip-text text-transparent">
           {" "}
