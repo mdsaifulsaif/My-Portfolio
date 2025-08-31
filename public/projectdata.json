@@ -1,5 +1,82 @@
 [
   {
+    "_id": "665f39a4c4a1d9f01b5a0003",
+    "title": "Devsphere Forum",
+    "description": "This is a modern forum web application built with the MERN stack. The client-side is developed using React with a focus on smooth user experience, role-based routing, and responsive design. It allows users to create posts, upvote/downvote, comment, and subscribe for membership. Admins can manage users, posts, and monitor abuse reports. Integrated Stripe payments unlock premium membership features. JWT cookie authentication ensures secure login and protected routes.",
+    "features": [
+      "JWT token-based authentication with cookie support",
+      "Login with Google for quick access",
+      "Create, Read, Update, and Delete forum posts",
+      "Limit of 5 posts for non-members, unlimited posting for members",
+      "Upvote and downvote system using React Query",
+      "User dashboard with profile and post list",
+      "Admin dashboard to manage users, posts, and roles",
+      "Role-based route protection (User/Admin)",
+      "403 Forbidden page for unauthorized access",
+      "Stripe payment integration for membership purchase",
+      "Comment system with abuse reporting",
+      "Admin can delete harmful comments and mark reports resolved",
+      "Responsive design using Tailwind CSS + DaisyUI",
+      "SweetAlert2 used for success and error dialogs",
+      "React-Select integration for enhanced tag selection"
+    ],
+    "techStack": {
+      "frontend": [
+        "React",
+        "React Router DOM",
+        "Axios",
+        "React Query (TanStack)",
+        "React Hook Form",
+        "SweetAlert2",
+        "React Icons",
+        "Tailwind CSS",
+        "DaisyUI",
+        "React-Select",
+        "Stripe (React)"
+      ],
+      "backend": ["Node.js", "Express.js", "MongoDB", "JWT Authentication"]
+    },
+    "tags": ["React", "Node.js", "Express", "MongoDB", "Stripe", "JWT"],
+    "image": "https://i.ibb.co/YQ4p3Pv/forum-preview.png",
+    "github client": "https://github.com/mdsaifulsaif/Devsphere-Forum-Client",
+    "github server": "https://github.com/mdsaifulsaif/Devsphere-Forum-Server",
+    "live": "https://devsphere-ph.netlify.app/"
+  },
+  {
+    "_id": "665f39a4c4a1d9f01b5a0004",
+    "title": "Next.js Multi-Layout App",
+    "description": "This is a modern web application built with Next.js 15+ App Router. It features multiple layouts (Home layout with Navbar/Footer and Dashboard layout without Navbar/Footer), authentication using NextAuth.js, and a responsive design with Tailwind CSS. The project demonstrates best practices for route-based layouts, protected routes, and modular architecture. Users can explore a public landing page and about page, while authenticated users can access a secure dashboard and add products.",
+    "features": [
+      "Multiple layout support with App Router",
+      "Home layout includes Navbar and Footer",
+      "Dashboard layout is minimal without Navbar/Footer",
+      "Authentication implemented with NextAuth.js",
+      "Protected routes for authenticated users only",
+      "Public pages: Home and About",
+      "Dashboard pages: Dashboard overview, Add Product form",
+      "Responsive design styled with Tailwind CSS",
+      "Clean and organized folder structure"
+    ],
+    "techStack": {
+      "frontend": [
+        "Next.js 15+ (App Router)",
+        "Tailwind CSS",
+        "NextAuth.js",
+        "React Icons"
+      ],
+      "backend": [
+        "NextAuth.js (Auth routes)",
+        "Node.js (built-in with Next.js)"
+      ]
+    },
+    "tags": ["Next.js", "Tailwind", "NextAuth", "App Router"],
+    "image": "https://i.ibb.co/ZcP1Jbq/nextjs-preview.png",
+    "github client": "https://github.com/mdsaifulsaif/Nextjs-MultiLayout-App",
+    "github server": "N/A",
+    "live": "https://nextjs-multilayout-app.netlify.app/"
+  },
+
+  {
     "_id": "665f39a4c4a1d9f01b5a0001",
     "title": "Event Management",
     "description": "EventMatea is a modern event management platform where users can discover, join, and manage events. It features dark mode, authentication, animated UI, and real-time filtering to create a dynamic and engaging experience.",

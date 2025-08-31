@@ -18,12 +18,29 @@ const ProjectCard = ({ project }) => {
       className="text-white rounded-2xl md:p-5 shadow-md hover:shadow-indigo-600/30 transition-all duration-300 flex flex-col h-full"
     >
       {/* Project Image */}
-      <div className="relative overflow-hidden">
+      {/* <div className="relative overflow-hidden ">
         <img
           src={project?.image}
           alt={project.title}
           className="w-full  object-contain"
         />
+        {project.badge && (
+          <span className="absolute top-2 right-2 bg-blue-600 text-xs font-semibold px-3 py-1 rounded-full">
+            {project.badge}
+          </span>
+        )}
+      </div> */}
+      {/* Project Image */}
+      <div className="relative overflow-hidden rounded-lg">
+        <img
+          src={project?.image}
+          alt={project.title}
+          className="w-full object-cover rounded-lg"
+        />
+
+        {/* Gradient Overlay */}
+        <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+
         {project.badge && (
           <span className="absolute top-2 right-2 bg-blue-600 text-xs font-semibold px-3 py-1 rounded-full">
             {project.badge}
@@ -85,7 +102,7 @@ const ProjectCard = ({ project }) => {
               rel="noopener noreferrer"
               className="flex items-center gap-2 text-sm bg-gray-700 hover:bg-gray-600 px-4 py-2 rounded-md"
             >
-              <FaGithub /> GitHub
+              <FaGithub />
             </a>
           )}
 
@@ -93,7 +110,7 @@ const ProjectCard = ({ project }) => {
             to={`/project/${project._id}`}
             className="flex items-center gap-2 text-sm bg-gray-700 hover:bg-gray-600 px-4 py-2 rounded-md"
           >
-            <FaArrowRight /> Project Detail
+            <FaArrowRight />
           </Link>
         </div>
       </div>

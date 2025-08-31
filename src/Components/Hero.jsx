@@ -69,7 +69,7 @@ const Hero = () => {
 
   return (
     <>
-      <div className="md:w-6xl mx-auto text-white pt-20 pb-10 px-4 md:px-0 flex flex-col-reverse md:flex-row items-center justify-between relative overflow-visible">
+      <div className="md:w-6xl  mx-auto text-white pt-20 pb-10 px-4 md:px-0 flex flex-col-reverse md:flex-row items-center justify-between relative overflow-visible">
         {/* Left Content */}
         <div className="md:w-1/2 text-center md:text-left space-y-6 z-10">
           <h1 className="text-3xl dark:text-gray-800 md:text-5xl font-bold leading-tight">
