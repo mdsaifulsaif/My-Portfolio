@@ -16,7 +16,7 @@ const AboutMe = () => {
   useEffect(() => {
     AOS.init({
       duration: 1000, //
-      once: false, // একবার এনিমেট হবে
+      once: false, //
     });
   }, []);
   return (
@@ -60,8 +60,8 @@ const AboutMe = () => {
               Hire Me
             </Link>
             <a
-              href="https://drive.google.com/file/d/1BNUD6_cdueFHyXuWEKfXYB_WO4j8Blw9/view?usp=sharing"
-              target="_blank"
+              href="https://drive.google.com/uc?export=download&id=1dmy01lxDJb3fSOuqVt8Ia1dpGducPZGO"
+              download
               className="border border-white px-6 py-2 rounded hover:bg-gradient-to-r from-purple-900 via-indigo-900 to-blue-900 z-0 transition hover:text-white"
             >
               Download CV

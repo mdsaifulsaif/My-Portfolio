@@ -9,9 +9,7 @@ function HomeLayOut() {
   return (
     <div className={` ${theme ? "" : "dark"}  dark:bg-white `}>
       <Navbar setThem={setThem} theme={theme}></Navbar>
-
       <Outlet></Outlet>
-
       <Footer></Footer>
     </div>
   );

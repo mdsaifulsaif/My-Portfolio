@@ -50,7 +50,7 @@ const ProjectDetails = () => {
         <img
           src={project.image}
           alt={project.title}
-          className="w-full h-[500px] object-cover rounded-xl mb-6"
+          className="w-full h-full  md:h-[500px] object-cover rounded-xl mb-6"
         />
 
         {/* Title */}

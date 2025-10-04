@@ -121,7 +121,7 @@ const Services = () => {
           <div
             data-aos="fade-up"
             key={index}
-            className={`bg-gray-800 rounded-xl p-5 shadow-md transition-colors duration-300 ${service.hoverBg} `}
+            className={`bg-gray-800 rounded-xl p-5 shadow-md transition-colors duration-300 ${service.hoverBg}  transition-all `}
           >
             <div className="mb-4">{service.icon}</div>
             <h3 className="text-xl font-bold mb-2">{service.title}</h3>

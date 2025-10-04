@@ -9,6 +9,7 @@ import ContactForm from "./ContactForm";
 import ServiceSection from "./Services";
 import Education from "../Components/Education";
 import AdditionalSkills from "../Components/AdditionalSkills";
+import Skills from "../Components/Skills";
 
 function Home() {
   return (
@@ -16,6 +17,7 @@ function Home() {
       <Hero></Hero>
       <AboutMe></AboutMe>
       <Education></Education>
+      {/* <Skills /> */}
       <SkillsSection></SkillsSection>
 
       <ServiceSection></ServiceSection>

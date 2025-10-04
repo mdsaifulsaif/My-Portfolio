@@ -35,7 +35,7 @@ const ProjectCard = ({ project }) => {
         <img
           src={project?.image}
           alt={project.title}
-          className="w-full object-cover rounded-lg"
+          className="w-full h-40 object-cover rounded-lg"
         />
 
         {/* Gradient Overlay */}

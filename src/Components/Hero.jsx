@@ -69,7 +69,7 @@ const Hero = () => {
 
   return (
     <>
-      <div className="md:w-6xl  mx-auto text-white pt-20 pb-10 px-4 md:px-0 flex flex-col-reverse md:flex-row items-center justify-between relative overflow-visible">
+      <div className="md:w-6xl lg:h-[90vh]  mx-auto text-white pt-20 pb-10 px-4 md:px-0 flex flex-col-reverse md:flex-row items-center justify-between relative overflow-visible">
         {/* Left Content */}
         <div className="md:w-1/2 text-center md:text-left space-y-6 z-10">
           <h1 className="text-3xl dark:text-gray-800 md:text-5xl font-bold leading-tight">
@@ -83,8 +83,10 @@ const Hero = () => {
             <span className="text-white dark:text-gray-800">Web Developer</span>
           </h1>
           <p className="text-gray-300 dark:text-gray-700 sm max-w-md mx-auto md:mx-0">
-            Hi, I’m Saiful – a passionate MERN stack developer. I help brands
-            turn ideas into high quality products.
+            Hi, I’m Saiful – a MERN Stack developer skilled in React JS,
+            Next.js, Node.js, Express.js, and MongoDB. I build scalable web
+            applications with high performance, responsive design, and reliable
+            backend solutions.
           </p>
 
           {/* Socials */}
@@ -127,8 +129,10 @@ const Hero = () => {
               View Project
             </Link>
             <a
-              href="https://drive.google.com/file/d/1BNUD6_cdueFHyXuWEKfXYB_WO4j8Blw9/view?usp=sharing"
-              target="blank"
+              href="https://drive.google.com/uc?export=download&id=1dmy01lxDJb3fSOuqVt8Ia1dpGducPZGO
+"
+              download
+              rel="noopener noreferrer"
               className="border border-gray-400 hover:bg-gray-800 text-white px-6 py-3 rounded-md flex items-center gap-2"
             >
               <FaDownload /> Download CV

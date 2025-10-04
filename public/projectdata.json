@@ -1,5 +1,107 @@
 [
   {
+    "_id": "66f0a1b2c4a1d9f01b5a1111",
+    "title": "ClipzyGo",
+    "description": "ClipzyGo is a Reels sharing web application built with the MERN stack. It allows users to upload, view, like, comment, follow, and unfollow creators. The platform features a modern feed layout, responsive design, and role-based access for partners. ClipzyGo is designed to provide a smooth social media experience with authentication, state management, and scalable backend APIs.",
+    "features": [
+      "JWT cookie-based authentication (secure login/logout)",
+      "User registration and login with role management (user/partner/admin)",
+      "Reels feed where users can upload and view reels",
+      "Like, comment, follow and unfollow system for creators",
+      "Responsive feed layout with left and right sidebars",
+      "Video play overlay with interactive controls",
+      "Profile section with user details and suggestions",
+      "Partner application system (users can apply, admin approves)",
+      "React Query for API state management and auto-refetch",
+      "React Hook Form for forms like login/register",
+      "Mobile-first design with Tailwind CSS & DaisyUI components"
+    ],
+    "techStack": {
+      "frontend": [
+        "React",
+        "React Router DOM",
+        "Axios",
+        "React Query (TanStack)",
+        "React Hook Form",
+        "React Icons",
+        "Tailwind CSS",
+        "DaisyUI"
+      ],
+      "backend": [
+        "Node.js",
+        "Express.js",
+        "MongoDB",
+        "Mongoose",
+        "JWT Authentication"
+      ]
+    },
+    "tags": [
+      "React",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "JWT",
+      "Social Media",
+      "Reels App"
+    ],
+    "image": "https://i.ibb.co.com/bMjx248B/Screenshot-2025-10-02-193732.jpg",
+    "github client": "https://github.com/mdsaifulsaif/Pood-Point-Frontend",
+    "github server": "https://github.com/mdsaifulsaif/Reels-app-server",
+    "live": "https://clipzygo.netlify.app/"
+  },
+
+  {
+    "_id": "665f39a4c4a1d9f01b5a0004",
+    "title": "Taka Tally",
+    "description": "Taka Tally is a personal finance and expense management web application built with the MERN stack. It helps users keep track of their income and expenses, view balance summaries, and manage their daily financial activities. The app is designed with responsive UI, user authentication, and interactive charts to visualize spending and savings trends.",
+    "features": [
+      "JWT cookie-based authentication (secure login/logout)",
+      "User dashboard with income, expense, and balance summary",
+      "Add new transactions with title, amount, type, category, and notes",
+      "Filter transactions by type (income/expense)",
+      "Dynamic summary calculation with balance auto-update",
+      "Transaction history with responsive design",
+      "Bar chart visualization of income vs expense",
+      "Role-based access for users (future ready for admin features)",
+      "React Query for API state management and auto refetch",
+      "React Hook Form for transaction and login forms",
+      "Logout functionality with API integration",
+      "Mobile-friendly and clean dashboard design"
+    ],
+    "techStack": {
+      "frontend": [
+        "React",
+        "React Router DOM",
+        "Axios",
+        "React Query (TanStack)",
+        "React Hook Form",
+        "React Icons",
+        "Tailwind CSS",
+        "DaisyUI",
+        "Recharts"
+      ],
+      "backend": [
+        "Node.js",
+        "Express.js",
+        "MongoDB",
+        "Mongoose",
+        "JWT Authentication"
+      ]
+    },
+    "tags": [
+      "React",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "JWT",
+      "Finance Tracker"
+    ],
+    "image": "https://i.ibb.co.com/LXkr3TLN/taka-tally.jpg",
+    "github client": "[https://github.com/mdsaifulsaif/Taka-Tally-Client](https://github.com/mdsaifulsaif/Taka-Tally-Client)",
+    "github server": "[https://github.com/mdsaifulsaif/Taka-Tally-Server](https://github.com/mdsaifulsaif/Taka-Tally-Server)",
+    "live": "[https://taka-tally.netlify.app/](https://taka-tally.netlify.app/)"
+  },
+  {
     "_id": "665f39a4c4a1d9f01b5a0003",
     "title": "Devsphere Forum",
     "description": "This is a modern forum web application built with the MERN stack. The client-side is developed using React with a focus on smooth user experience, role-based routing, and responsive design. It allows users to create posts, upvote/downvote, comment, and subscribe for membership. Admins can manage users, posts, and monitor abuse reports. Integrated Stripe payments unlock premium membership features. JWT cookie authentication ensures secure login and protected routes.",
@@ -37,43 +139,10 @@
       "backend": ["Node.js", "Express.js", "MongoDB", "JWT Authentication"]
     },
     "tags": ["React", "Node.js", "Express", "MongoDB", "Stripe", "JWT"],
-    "image": "https://i.ibb.co/YQ4p3Pv/forum-preview.png",
+    "image": "https://i.ibb.co.com/PvFy4DtG/Forum-09-29-2025-12-29-PM.png",
     "github client": "https://github.com/mdsaifulsaif/Devsphere-Forum-Client",
     "github server": "https://github.com/mdsaifulsaif/Devsphere-Forum-Server",
     "live": "https://devsphere-ph.netlify.app/"
-  },
-  {
-    "_id": "665f39a4c4a1d9f01b5a0004",
-    "title": "Next.js Multi-Layout App",
-    "description": "This is a modern web application built with Next.js 15+ App Router. It features multiple layouts (Home layout with Navbar/Footer and Dashboard layout without Navbar/Footer), authentication using NextAuth.js, and a responsive design with Tailwind CSS. The project demonstrates best practices for route-based layouts, protected routes, and modular architecture. Users can explore a public landing page and about page, while authenticated users can access a secure dashboard and add products.",
-    "features": [
-      "Multiple layout support with App Router",
-      "Home layout includes Navbar and Footer",
-      "Dashboard layout is minimal without Navbar/Footer",
-      "Authentication implemented with NextAuth.js",
-      "Protected routes for authenticated users only",
-      "Public pages: Home and About",
-      "Dashboard pages: Dashboard overview, Add Product form",
-      "Responsive design styled with Tailwind CSS",
-      "Clean and organized folder structure"
-    ],
-    "techStack": {
-      "frontend": [
-        "Next.js 15+ (App Router)",
-        "Tailwind CSS",
-        "NextAuth.js",
-        "React Icons"
-      ],
-      "backend": [
-        "NextAuth.js (Auth routes)",
-        "Node.js (built-in with Next.js)"
-      ]
-    },
-    "tags": ["Next.js", "Tailwind", "NextAuth", "App Router"],
-    "image": "https://i.ibb.co/ZcP1Jbq/nextjs-preview.png",
-    "github client": "https://github.com/mdsaifulsaif/Nextjs-MultiLayout-App",
-    "github server": "N/A",
-    "live": "https://nextjs-multilayout-app.netlify.app/"
   },
 
   {
@@ -114,7 +183,7 @@
       "backend": []
     },
     "tags": ["React", "Node.js", "Express", "Firebase"],
-    "image": "https://i.ibb.co/nMpY3BtG/1.png",
+    "image": "https://i.ibb.co.com/p6wMhnNs/Impacthub-Home-09-29-2025-12-35-PM.png",
     "github client": "https://github.com/mdsaifulsaif/PathoWay",
     "live": "https://impacthub-ph.netlify.app/"
   },
@@ -155,7 +224,7 @@
       "backend": ["Node.js", "Express.js", "MongoDB", "Firebase Admin SDK"]
     },
     "tags": ["React", "Node.js", "Express", "Firebase"],
-    "image": "https://i.ibb.co/TMfMZtkw/2.png",
+    "image": "https://i.ibb.co.com/k2Rg3V8j/Ninja-Home-09-29-2025-12-32-PM.png",
     "github client": "https://github.com/mdsaifulsaif/Plant-Care-Tracker-Client-10",
     "github server": "https://github.com/mdsaifulsaif/Plant-Care-Tracker-Client-10",
     "live": "https://ninja-ph.netlify.app/"
@@ -195,44 +264,8 @@
       "backend": ["Node.js", "Express.js", "MongoDB"]
     },
     "tags": ["React", "Node.js", "Express", "Firebase"],
-    "image": "https://i.ibb.co/8nL96SqX/3.png",
+    "image": "https://i.ibb.co.com/Q5p63Dd/Job-house-Home-09-30-2025-01-02-AM.png",
     "github client": "https://github.com/mdsaifulsaif/JobTrack-Client-9",
     "live": "https://job-house-ph.netlify.app/"
-  },
-  {
-    "_id": "665f39a4c4a1d9f01b5a0004",
-    "title": "PathoWay",
-    "description": "Pathoway is a modern parcel delivery platform where users can effortlessly send parcels by filling out sender and receiver forms. It features real-time tracking, rider management, and secure online payments.",
-    "features": [
-      "Full CRUD operations for parcel management",
-      "Stripe Payment Integration with secure transaction logging",
-      "Track parcels using tracking ID",
-      "Payment status updates with date logging",
-      "Pathoway is a modern parcel delivery platform where users can effortlessly send parcels by filling out sender and receiver forms",
-      "Send Parcel Easily – Fill in sender and receiver details through a dynamic, user-friendly form",
-      "Smart Rider Registration – Users can apply to become delivery riders with role-based data submission",
-      "Stripe Payment Integration – Secure checkout using Stripe for various delivery types",
-      "Coverage Visualization – Interactive Leaflet.js map showing delivery zones across Bangladesh",
-      "Service Types – Supports document, parcel, and door-to-door deliveries",
-      "Firebase Authentication – Email/password-based secure login system",
-      "Admin Controls (future scope) – Dashboard structure to manage riders, orders, and service centers"
-    ],
-
-    "techStack": {
-      "frontend": [
-        "React 19",
-        "Tailwind CSS",
-        "React Hook Form",
-        "React Icons",
-        "React Query",
-        "Leaflet.js"
-      ],
-      "backend": ["Node.js", "Express.js", "MongoDB", "Firebase Admin SDK"]
-    },
-
-    "tags": ["React", "Node.js", "Express", "Firebase"],
-    "image": "https://i.ibb.co/yBNqpXDw/4.png",
-    "github client": "https://github.com/mdsaifulsaif/PathoWay",
-    "live": "https://pathoway-ph.netlify.app/"
   }
 ]
