@@ -17,9 +17,7 @@ function Home() {
       <Hero></Hero>
       <AboutMe></AboutMe>
       <Education></Education>
-      {/* <Skills /> */}
       <SkillsSection></SkillsSection>
-
       <ServiceSection></ServiceSection>
       <Experience></Experience>
       <Projects></Projects>
