@@ -5,20 +5,31 @@ import { useEffect } from "react";
 
 const experiences = [
   {
+    duration: "Jan 2023 – Jun 2023",
+    company: "Click The Photo",
+    position: "Digital Marketing Specialist",
+    description:
+      "Handled SEO, social media campaigns, and analytics. Boosted site traffic by 40% through strategic digital planning and content optimization.",
+    link: "https://clickthephoto.com/",
+    logo: "https://i.ibb.co/hJWhJGDJ/click-the-photo.jpg",
+  },
+  {
     duration: "Jun 2023 – Aug 2024",
     company: "E-Learning & Earning Ltd.",
     position: "Jr. Wordpress Developer",
     description:
-      "Worked on WordPress-based websites, including custom theme development, plugin customization, and responsive design implementation. Ensured performance optimization and cross-browser compatibility.",
-    link: "#", // Replace with real company link if available
+      "Worked on WordPress-based websites, focusing on custom theme development, plugin customization, and responsive design implementation. Provided official support to clients, ensuring performance optimization, cross-browser compatibility, and smooth user experience.",
+    link: "https://e-laeltd.com/",
+    logo: "https://i.ibb.co/QvYXF85d/ele.png",
   },
   {
-    duration: "Jan 2023 – Jun 2023",
-    company: "E-Learning & Earning Ltd.",
-    position: "Digital Marketing Specialist",
+    duration: "Sep 2024 – Present",
+    company: "Bseba Software",
+    position: "Frontend Developer",
     description:
-      "Handled SEO, social media campaigns, and analytics. Boosted site traffic by 40% through strategic digital planning and content optimization.",
-    link: "#",
+      "Building and optimizing modern web interfaces using React.js, Tailwind CSS, and REST APIs. Also experienced with backend technologies like Node.js, Express, and MongoDB for full-stack development, ensuring seamless integration between front and back ends and delivering high-performing, scalable web solutions.",
+    link: "https://www.bseba.com/",
+    logo: "https://i.ibb.co/8nSsXgZw/bseva.png",
   },
 ];
 
@@ -27,66 +38,82 @@ const Experience = () => {
     AOS.init({
       duration: 1000,
       once: false,
+      easing: "ease-in-out",
     });
   }, []);
 
   return (
-    <section className="md:w-6xl px-5 md:px-0 mx-auto text-white py-16">
+    <section className="md:w-6xl px-5 md:px-0 mx-auto py-16 text-white">
       <h2
-        data-aos="fade-right"
+        data-aos="fade-up"
         className="text-3xl md:text-4xl font-bold text-center mb-12"
       >
         Experience
-        <span className="bg-gradient-to-r from-purple-600 via-indigo-500 to-blue-500 bg-clip-text text-transparent">
+        <span className="bg-gradient-to-r from-[#129990] via-emerald-400 to-green-400 bg-clip-text text-transparent">
           .
         </span>
       </h2>
 
-      {/* Timeline */}
-      <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
-        {experiences.map((exp, index) => (
-          <li key={index} data-aos="fade-up">
-            {index !== 0 && <hr />}
-            <div className="timeline-middle">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-                className="h-5 w-5 text-blue-500"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-                  clipRule="evenodd"
-                />
-              </svg>
-            </div>
-            <div
-              className={`${
-                index % 2 === 0
-                  ? "timeline-start mb-10 md:text-end"
-                  : "timeline-end md:mb-10"
-              }`}
-            >
-              <time className="font-mono italic">{exp.duration}</time>
-              <div className="text-lg font-bold flex items-center gap-2">
-                <a
-                  href={exp.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-2 transition-colors hover:text-blue-500"
-                >
-                  {exp.company} | {exp.position}
-                  <FaArrowUpRightFromSquare className="text-sm" />
-                </a>
+      <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical relative">
+        {experiences
+          .slice(0)
+          .reverse()
+          .map((exp, index) => (
+            <li key={index} data-aos="fade-up">
+              {index !== 0 && <hr />}
+
+              <div className="timeline-middle">
+                <div className="w-6 h-6 rounded-full bg-gradient-to-r from-purple-600 via-indigo-500 to-blue-500 border-4 border-gray-900"></div>
               </div>
-              <p className="text-gray-300 mt-2 leading-relaxed">
-                {exp.description}
-              </p>
-            </div>
-            <hr />
-          </li>
-        ))}
+
+              <div
+                className={`${
+                  index % 2 === 0
+                    ? "timeline-start mb-5 md:mb-10 md:text-end"
+                    : "timeline-end mb-5 md:mb-10"
+                }`}
+              >
+                <div className="flex justify-center md:justify-normal">
+                  <div className="rounded-2xl shadow-lg p-5 hover:shadow-2xl transition-all duration-300 border-l-4 border-white/20 md:w-[600px] bg-black/30 backdrop-blur-sm">
+                    {/* Logo inside card */}
+                    <div className="flex items-center gap-3 mb-3">
+                      <img
+                        src={exp.logo}
+                        alt={exp.company}
+                        className="w-12 h-12 rounded-lg object-cover border border-white/20"
+                      />
+                      <div>
+                        <time className="text-sm text-gray-200 font-mono block">
+                          {exp.duration}
+                        </time>
+                        <h3 className="text-xl font-semibold flex items-center gap-2">
+                          <a
+                            href={exp.link}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="flex items-center gap-2 hover:text-gray-200 transition-colors"
+                          >
+                            {exp.company}
+                            <FaArrowUpRightFromSquare className="text-sm" />
+                          </a>
+                        </h3>
+                      </div>
+                    </div>
+
+                    {/* Position + Description */}
+                    <p className="text-gray-200 text-sm font-medium mb-2">
+                      {exp.position}
+                    </p>
+                    <p className="text-gray-100 leading-relaxed">
+                      {exp.description}
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <hr />
+            </li>
+          ))}
       </ul>
     </section>
   );
