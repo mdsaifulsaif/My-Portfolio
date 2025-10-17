@@ -1,5 +1,3 @@
-import Aos from "aos";
-import React, { useEffect } from "react";
 import {
   FaLaptopCode,
   FaMobileAlt,
@@ -10,6 +8,7 @@ import {
 } from "react-icons/fa";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const services = [
   {
@@ -23,7 +22,6 @@ const services = [
       "Single Page Applications",
       "Server-Side Rendering",
     ],
-    hoverBg: "hover:bg-cyan-900",
   },
   {
     title: "Responsive Design",
@@ -36,7 +34,6 @@ const services = [
       "Touch-Friendly Interfaces",
       "Adaptive Layouts",
     ],
-    hoverBg: "hover:bg-pink-900",
   },
   {
     title: "Frontend Development",
@@ -49,7 +46,6 @@ const services = [
       "Axios & localStorage Integration",
       "State Management (useState, useEffect, useContext)",
     ],
-    hoverBg: "hover:bg-sky-900",
   },
   {
     title: "UI/UX Implementation",
@@ -62,7 +58,6 @@ const services = [
       "Component Libraries",
       "Responsive Layouts & Animations",
     ],
-    hoverBg: "hover:bg-orange-900",
   },
   {
     title: "Backend Development",
@@ -75,7 +70,6 @@ const services = [
       "JWT Authentication",
       "Role-Based Access Control",
     ],
-    hoverBg: "hover:bg-purple-900",
   },
   {
     title: "Cloud Deployment",
@@ -88,19 +82,19 @@ const services = [
       "Environment Variable Management",
       "Production Optimization",
     ],
-    hoverBg: "hover:bg-pink-900",
   },
 ];
 
 const Services = () => {
   useEffect(() => {
     AOS.init({
-      duration: 1000, // Animation duration
-      once: false, // Animation will happen every time the element is in view
+      duration: 1000,
+      once: false,
     });
   }, []);
+
   return (
-    <section className="text-white my-5 pt-15 px-5 md:px-0  md:w-6xl mx-auto ">
+    <section className="text-white my-5 pt-15 px-5 md:px-0 md:w-6xl mx-auto">
       <div className="text-center mb-12">
         <h2
           data-aos="fade-right"
@@ -121,16 +115,22 @@ const Services = () => {
           <div
             data-aos="fade-up"
             key={index}
-            className={`bg-gray-800 rounded-xl p-5 shadow-md transition-colors duration-300 ${service.hoverBg}  transition-all `}
+            className="relative bg-gray-800/80 rounded-xl p-5 shadow-md transition-all duration-500 hover:shadow-2xl group overflow-hidden"
           >
-            <div className="mb-4">{service.icon}</div>
-            <h3 className="text-xl font-bold mb-2">{service.title}</h3>
-            <p className="text-gray-400 mb-4">{service.description}</p>
-            <ul className="list-disc pl-5 space-y-1 text-sm text-gray-300">
-              {service.features.map((feature, i) => (
-                <li key={i}>{feature}</li>
-              ))}
-            </ul>
+            {/* Gradient overlay for smooth hover effect */}
+            <div className="absolute inset-0 bg-gradient-to-r from-purple-600/20 via-indigo-500/20 to-blue-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+
+            {/* Card content */}
+            <div className="relative z-10">
+              <div className="mb-4">{service.icon}</div>
+              <h3 className="text-xl font-bold mb-2">{service.title}</h3>
+              <p className="text-gray-400 mb-4">{service.description}</p>
+              <ul className="list-disc pl-5 space-y-1 text-sm text-gray-300">
+                {service.features.map((feature, i) => (
+                  <li key={i}>{feature}</li>
+                ))}
+              </ul>
+            </div>
           </div>
         ))}
       </div>

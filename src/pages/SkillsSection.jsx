@@ -23,121 +23,111 @@ const skills = [
   {
     title: "Frontend Development",
     icon: <SiHtml5 />,
-    color: "from-blue-500 to-blue-300", // gradient
-    bgColor: "bg-blue-600", // icon bg
+    bgColor: "from-blue-600 to-blue-400",
     skills: [
-      { name: "React.js", level: 85, icon: <SiReact /> },
-      { name: "JavaScript", level: 90, icon: <SiJavascript /> },
-      { name: "HTML5/CSS3", level: 95, icon: <SiHtml5 /> },
+      { name: "React.js", icon: <SiReact /> },
+      { name: "JavaScript", icon: <SiJavascript /> },
+      { name: "HTML5 / CSS3", icon: <SiHtml5 /> },
     ],
   },
   {
     title: "Backend Development",
     icon: <SiNodedotjs />,
-    color: "from-green-500 to-green-300",
-    bgColor: "bg-green-600",
+    bgColor: "from-green-600 to-green-400",
     skills: [
-      { name: "Node.js", level: 60, icon: <SiNodedotjs /> },
-      { name: "Express.js", level: 70, icon: <SiExpress /> },
-      { name: "REST API", level: 90, icon: <SiPostman /> },
+      { name: "Node.js", icon: <SiNodedotjs /> },
+      { name: "Express.js", icon: <SiExpress /> },
+      { name: "REST API", icon: <SiPostman /> },
     ],
   },
   {
     title: "Database & Storage",
     icon: <SiMongodb />,
-    color: "from-purple-500 to-purple-300",
-    bgColor: "bg-purple-600",
+    bgColor: "from-purple-600 to-purple-400",
     skills: [
-      { name: "MongoDB", level: 90, icon: <SiMongodb /> },
-      { name: "MySQL", level: 75, icon: <SiMysql /> },
-      { name: "Firebase", level: 85, icon: <SiFirebase /> },
+      { name: "MongoDB", icon: <SiMongodb /> },
+      { name: "MySQL", icon: <SiMysql /> },
+      { name: "Firebase", icon: <SiFirebase /> },
     ],
   },
   {
     title: "Cloud & DevOps",
     icon: <SiNetlify />,
-    color: "from-orange-500 to-yellow-300",
-    bgColor: "bg-orange-600",
+    bgColor: "from-orange-600 to-yellow-400",
     skills: [
-      { name: "Netlify", level: 85, icon: <SiNetlify /> },
-      { name: "Vercel", level: 95, icon: <SiVercel /> },
-      { name: "Railway", level: 90, icon: <SiRailway /> },
+      { name: "Netlify", icon: <SiNetlify /> },
+      { name: "Vercel", icon: <SiVercel /> },
+      { name: "Railway", icon: <SiRailway /> },
     ],
   },
   {
     title: "WordPress",
     icon: <SiWordpress />,
-    color: "from-pink-500 to-pink-300",
-    bgColor: "bg-pink-600",
-    skills: [
-      { name: "WordPress Theme Development", level: 70, icon: <SiWordpress /> },
-    ],
+    bgColor: "from-pink-600 to-pink-400",
+    skills: [{ name: "Theme Development", icon: <SiWordpress /> }],
   },
 ];
 
 const SkillsSection = () => {
   useEffect(() => {
-    AOS.init({
-      duration: 1000,
-      once: false,
-    });
+    AOS.init({ duration: 1000, once: false });
   }, []);
+
   return (
-    <section className=" md:w-6xl px-5 md:px-0 pt-15 mx-auto">
+    <section className="md:w-6xl px-5 md:px-0 pt-15 mx-auto">
       <h2
         data-aos="fade-right"
-        className="text-3xl md:text-4xl  font-bold text-center mb-10"
+        className="text-3xl md:text-4xl font-bold text-center mb-10"
       >
         My{" "}
         <span className="bg-gradient-to-r from-purple-600 via-indigo-500 to-blue-500 bg-clip-text text-transparent">
           Skills
         </span>
       </h2>
+
       <div className="grid md:grid-cols-2 gap-8">
         {skills.map((category, index) => (
           <div
             data-aos="fade-up"
             key={index}
-            className={`border-2 rounded-xl p-6 shadow-lg overflow-hidden  text-white border-blue-500 ${
+            className={`border border-gray-700 rounded-xl p-6 shadow-lg text-white relative overflow-hidden transition-all duration-500 hover:shadow-2xl ${
               skills.length % 2 !== 0 && index === skills.length - 1
                 ? "md:col-span-2 md:mx-auto md:w-1/2"
                 : ""
             }`}
           >
-            {/* Section Title */}
-            <div className="flex items-center gap-3 mb-6">
+            {/* gradient overlay */}
+            <div
+              className={`absolute inset-0 bg-gradient-to-r ${category.bgColor} opacity-10 group-hover:opacity-20 transition-opacity duration-500`}
+            ></div>
+
+            {/* Section Header */}
+            <div className="flex items-center gap-3 mb-6 relative z-10">
               <div
-                className={`text-white p-2 text-xl rounded-lg ${category.bgColor}`}
+                className={`text-white p-2 text-xl rounded-lg bg-gradient-to-r ${category.bgColor}`}
               >
                 {category.icon}
               </div>
               <h3 className="text-xl font-semibold">{category.title}</h3>
             </div>
 
-            {/* Skills */}
-            <div data-aos="fade-left" className="space-y-4">
+            {/* Skill Items */}
+            <div className="flex flex-wrap gap-3 relative z-10">
               {category.skills.map((skill, i) => (
-                <div key={i}>
-                  <div className="flex justify-between items-center mb-1 text-sm font-medium">
-                    <div className="flex items-center gap-2">
-                      <span className="text-lg">{skill.icon}</span>
-                      <span>{skill.name}</span>
-                    </div>
-                    <span>{skill.level}%</span>
-                  </div>
-                  <div className="w-full h-2 bg-gray-800 rounded-full">
-                    <div
-                      className={`h-2 rounded-full transition-all duration-500 bg-gradient-to-r ${category.color}`}
-                      style={{ width: `${skill.level}%` }}
-                    ></div>
-                  </div>
+                <div
+                  key={i}
+                  className="flex items-center gap-2 px-4 py-2 rounded-full bg-gray-800/70 backdrop-blur-sm hover:bg-gradient-to-r hover:from-indigo-600 hover:to-blue-600 transition-all duration-500 cursor-pointer shadow-md"
+                >
+                  <span className="text-lg">{skill.icon}</span>
+                  <span className="text-sm font-medium">{skill.name}</span>
                 </div>
               ))}
             </div>
           </div>
         ))}
       </div>
-      <AdditionalSkills></AdditionalSkills>
+
+      <AdditionalSkills />
     </section>
   );
 };
